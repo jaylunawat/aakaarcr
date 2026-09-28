@@ -1,0 +1,657 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><meta content="web_standard" name="shell-type"><title>Aakaar IIT Bombay - CR Portal '26</title><link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&amp;family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}.bg-grid-pattern{background-size:24px 24px;background-image:linear-gradient(to right,rgba(28,27,27,0.06) 1px,transparent 1px),linear-gradient(to bottom,rgba(28,27,27,0.06) 1px,transparent 1px);}.pixel-box-shadow{box-shadow:4px 4px 0px #1c1b1b;}.pixel-box-shadow-sm{box-shadow:2px 2px 0px #1c1b1b;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "surface-container-low": "#f6f3f2", "tertiary-fixed-dim": "#ffb59d", "surface-dim": "#dcd9d9", "on-tertiary-fixed-variant": "#832600", "surface-container-high": "#ebe7e7", "background": "#fcf9f8", "on-primary-container": "#6f5700", "on-tertiary": "#ffffff", "surface-bright": "#fcf9f8", "on-error": "#ffffff", "surface-variant": "#e5e2e1", "on-error-container": "#93000a", "error-container": "#ffdad6", "primary-fixed-dim": "#f1c100", "on-background": "#1c1b1b", "secondary-fixed": "#7df4ff", "surface": "#fcf9f8", "surface-container-highest": "#e5e2e1", "error": "#ba1a1a", "secondary-container": "#00eefc", "on-primary": "#ffffff", "surface-tint": "#745b00", "on-secondary-fixed": "#002022", "outline-variant": "#d2c5ab", "outline": "#80765f", "on-tertiary-fixed": "#390c00", "primary-fixed": "#ffe08b", "on-secondary-container": "#00686f", "on-surface-variant": "#4e4632", "on-tertiary-container": "#a43200", "secondary": "#006970", "inverse-surface": "#313030", "on-surface": "#1c1b1b", "tertiary-fixed": "#ffdbd0", "on-secondary": "#ffffff", "primary-container": "#ffcc00", "on-secondary-fixed-variant": "#004f54", "on-primary-fixed": "#241a00", "tertiary": "#ab3500", "inverse-on-surface": "#f3f0ef", "primary": "#745b00", "surface-container": "#f0edec", "surface-container-lowest": "#ffffff", "on-primary-fixed-variant": "#584400", "secondary-fixed-dim": "#00dbe9", "tertiary-container": "#ffc5b3", "inverse-primary": "#f1c100" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-lg": "1.5rem", "space-xs": "0.25rem", "margin": "2rem", "space-sm": "0.5rem", "margin-sm": "1rem", "space-xl": "2.5rem", "gutter-sm": "1rem", "space-md": "1rem", "gutter": "1.5rem" }, "fontFamily": { "headline-lg-mobile": [ "Space Mono" ], "headline-md": [ "Space Mono" ], "label-lg": [ "Space Mono" ], "body-md": [ "Space Mono" ], "body-lg": [ "Space Mono" ], "headline-lg": [ "Space Mono" ], "label-md": [ "Space Mono" ], "headline-sm": [ "Space Mono" ], "headline-xl": [ "Space Mono" ], "body-sm": [ "Space Mono" ], "headline-xl-mobile": [ "Space Mono" ], "label-sm": [ "Space Mono" ] }, "fontSize": { "headline-lg-mobile": [ "24px", { "lineHeight": "32px", "fontWeight": "700" } ], "headline-md": [ "24px", { "lineHeight": "32px", "fontWeight": "700" } ], "label-lg": [ "14px", { "lineHeight": "20px", "fontWeight": "700" } ], "body-md": [ "14px", { "lineHeight": "22px", "fontWeight": "400" } ], "body-lg": [ "16px", { "lineHeight": "26px", "fontWeight": "400" } ], "headline-lg": [ "32px", { "lineHeight": "40px", "fontWeight": "700" } ], "label-md": [ "12px", { "lineHeight": "16px", "fontWeight": "700" } ], "headline-sm": [ "20px", { "lineHeight": "28px", "fontWeight": "700" } ], "headline-xl": [ "40px", { "lineHeight": "48px", "fontWeight": "700" } ], "body-sm": [ "12px", { "lineHeight": "18px", "fontWeight": "400" } ], "headline-xl-mobile": [ "28px", { "lineHeight": "36px", "fontWeight": "700" } ], "label-sm": [ "10px", { "lineHeight": "14px", "fontWeight": "700" } ] } } } };</script></head><body class="bg-surface font-body-md text-on-surface bg-grid-pattern min-h-screen flex flex-col"><!-- BEGIN: MainHeader -->
+<header class="sticky top-0 z-50 bg-[#f4f4f4] border-b-4 border-black" style="color: #000; min-width: max-content;">
+<div class="px-4 h-24 flex items-center justify-between font-mono text-black font-bold uppercase text-[10px] sm:text-[11px] gap-2 lg:gap-4 max-w-none">
+<!-- Brand Logo -->
+<a class="flex items-center space-x-2 shrink-0" href="index.html" title="Aakaar CR Portal 2026">
+<span class="text-2xl sm:text-3xl font-black tracking-tighter" style="font-family: 'Space Mono', monospace;">AAKAAR</span>
+<div class="bg-[#FFD026] text-black border-2 border-black px-2 py-1 shadow-[2px_2px_0_#000] text-[10px]">
+CR '26
+</div>
+</a>
+
+<!-- Navigation Tabs -->
+<nav aria-label="Main Navigation" class="hidden xl:flex items-stretch gap-2 h-12 lg:h-14">
+<a class="flex items-center justify-center px-4 bg-white border-2 border-black hover:bg-[#FFD026] hover:shadow-[4px_4px_0_#000] hover:-translate-y-0.5 transition-all text-center leading-tight  text-black font-bold" href="index.html">HOME</a>
+<a class="flex items-center justify-center px-4 bg-white border-2 border-black hover:bg-[#FFD026] hover:shadow-[4px_4px_0_#000] hover:-translate-y-0.5 transition-all text-center leading-tight  text-black font-bold" href="about.html">ABOUT</a>
+<a class="flex items-center justify-center px-3 bg-white border-2 border-black hover:bg-[#FFD026] hover:shadow-[4px_4px_0_#000] hover:-translate-y-0.5 transition-all text-center leading-tight  text-black font-bold" href="roles.html">ROLES<br>&amp;<br>QUESTS</a>
+<a class="flex items-center justify-center px-3 bg-white border-2 border-black hover:bg-[#FFD026] hover:shadow-[4px_4px_0_#000] hover:-translate-y-0.5 transition-all text-center leading-tight  text-black font-bold" href="incentives.html">INCENTIVES<br>&amp; LOOT</a>
+<a class="flex items-center justify-center px-4 bg-[#FFD026] border-2 border-black shadow-[4px_4px_0_#000] transition-all text-center leading-tight text-[13px] font-bold" href="leaderboard.html">SCORES /<br>LEADERBOARD</a>
+<a class="flex items-center justify-center px-4 bg-white border-2 border-black hover:bg-[#FFD026] hover:shadow-[4px_4px_0_#000] hover:-translate-y-0.5 transition-all text-center leading-tight  text-black font-bold" href="faq.html">FAQS</a>
+<a class="flex items-center justify-center px-3 bg-white border-2 border-black hover:bg-[#FFD026] hover:shadow-[4px_4px_0_#000] hover:-translate-y-0.5 transition-all text-center leading-tight  text-black font-bold" href="team.html">TEAM &amp;<br>CONTACT</a>
+</nav>
+
+<!-- Right Header Actions -->
+<div class="flex items-center gap-2 lg:gap-3 shrink-0 h-10 lg:h-12">
+<button data-site-theme class="flex items-center justify-center px-4 h-full bg-[#e8e8e8] border-2 border-black shadow-[3px_3px_0_#000] hover:bg-white hover:translate-x-[1px] hover:translate-y-[1px] hover:shadow-[2px_2px_0_#000] transition-all" type="button">
+<span id="theme-label-text">DAY: ON</span>
+</button>
+<a class="flex items-center justify-center px-5 h-full bg-[#FFD026] border-2 border-black shadow-[4px_4px_0_#000] hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-[2px_2px_0_#000] transition-all text-[12px] sm:text-[13px]" href="index.html#portal-access">
+LOGIN / REGISTER
+</a>
+</div>
+</div>
+</header>
+<!-- END: MainHeader --><main class="w-full pt-20 flex-1"><div class="max-w-[1280px] mx-auto px-margin py-space-lg"><div class="flex flex-col w-full">
+<!-- Telemetry Sub-HUD / Live Stats Header -->
+<div class="w-full bg-surface-container-lowest p-6 mb-8 shadow-xl relative overflow-hidden">
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-6 relative z-10">
+<div class="flex-1">
+<div class="inline-flex items-center gap-2 bg-primary-container text-on-surface px-3 py-1 font-label-sm text-label-sm uppercase mb-3">
+<span class="w-2 h-2 bg-tertiary animate-pulse inline-block"></span>
+          SECTOR TELEMETRY // CYBER-GRID ACTIVE
+        </div>
+<h1 class="font-headline-lg text-headline-lg uppercase text-on-surface tracking-tight mb-2">
+          LEADERBOARD &amp; HIGH SCORES
+        </h1>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-2xl">
+          Real-time telemetry tracking top-performing College Representatives competing across Asia's largest civil engineering battleground.
+        </p>
+</div>
+<!-- Live Counters & Mission Clock -->
+<div class="flex flex-wrap sm:flex-nowrap items-stretch gap-4 shrink-0">
+<div class="bg-surface-container p-4 min-w-[150px] shadow-sm flex flex-col justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">QUOTA ACTIVE</span>
+<div class="flex items-baseline gap-1 my-1">
+<span class="font-headline-md text-headline-md text-primary font-bold">94.8%</span>
+</div>
+<div class="w-full bg-surface-variant h-2 overflow-hidden">
+<div class="bg-primary h-full w-[94.8%]"></div>
+</div>
+<span class="font-label-sm text-label-sm text-secondary font-bold mt-1">▲ ENGAGED NATIONWIDE</span>
+</div>
+<div class="bg-surface-container p-4 min-w-[150px] shadow-sm flex flex-col justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">FINALE COUNTDOWN</span>
+<div class="flex items-baseline gap-1 my-1">
+<span class="font-headline-md text-headline-md text-tertiary font-bold">T-68</span>
+<span class="font-label-sm text-label-sm text-on-surface">DAYS</span>
+</div>
+<div class="w-full bg-surface-variant h-2 overflow-hidden">
+<div class="bg-tertiary h-full w-[68%]"></div>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-1">AAKAAR MAIN EVENT</span>
+</div>
+<div class="bg-secondary-fixed text-on-secondary-fixed p-4 min-w-[140px] shadow-sm flex flex-col justify-between">
+<span class="font-label-sm text-label-sm font-bold uppercase tracking-wider">ACTIVE CRs</span>
+<div class="font-headline-md text-headline-md font-bold mt-1">1,420+</div>
+<span class="font-label-sm text-label-sm mt-1">320 CAMPUSES</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Podium of Champions (Top 3 Isometric-Style Ranks) -->
+<div class="mb-12">
+<div class="flex items-center justify-between mb-4">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[28px]" style="font-variation-settings: 'FILL' 1;">military_tech</span>
+<h2 class="font-headline-sm text-headline-sm uppercase text-on-surface">PODIUM OF CHAMPIONS</h2>
+</div>
+<span class="font-label-sm text-label-sm bg-surface-variant text-on-surface-variant px-2.5 py-1 uppercase">VERIFIED PROTOCOL // LIVE UPDATES</span>
+</div>
+<!-- Responsive Podium Grid -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6 items-end">
+<!-- Rank #02: Silver Medalist (COEP Pune) -->
+<div class="order-2 md:order-1 bg-surface-container-lowest p-6 shadow-md transition-transform hover:-translate-y-1 relative">
+<div class="absolute -top-3 left-4 bg-surface-dim text-on-surface font-label-md text-label-md px-3 py-1 shadow-sm uppercase flex items-center gap-1 font-bold">
+<span class="material-symbols-outlined text-[16px]">workspace_premium</span>
+          RANK #02 // SILVER
+        </div>
+<div class="flex items-center gap-4 mt-3 mb-4">
+<div class="w-16 h-16 bg-surface-container-high overflow-hidden shrink-0">
+<img class="w-full h-full object-cover" data-alt="Stylized portrait of engineering student Pooja Deshmukh, focused expression, cinematic warm lighting, modern graphic avatar aesthetic with architectural background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAaWTa4gdR8ynq0-TKt4tMFHnPrpvFDvWkuKzRuAB6uAJtp0euwtm4ldmjovI9TqqBnpFdPSGkQC2wzOvuTsMSQjzstO17vc3itmLuYLUANRlB-zRewU4z_cRqzBXaHMB7TAT_ejsQOVAV2nQRdHvg2rFJxPz6eOBqIagMRcrtINycBY4AOjD7GwqYG8WBmE1DcII2NUg6IlBqitX6nrl5V1630QeC9lyINWJwusgqpX5TNH_yxp7WS">
+</div>
+<div class="min-w-0">
+<h3 class="font-headline-sm text-headline-sm text-on-surface truncate">Pooja Deshmukh</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">COEP Pune [West Zone]</p>
+<div class="inline-block bg-surface-variant text-on-surface font-label-sm text-label-sm px-2 py-0.5 mt-1 font-bold uppercase">
+              Master Badge
+            </div>
+</div>
+</div>
+<div class="space-y-3 bg-surface-container-low p-4 mb-4">
+<div class="flex justify-between items-center text-sm font-bold">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Total Protocol XP:</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">2,150 <span class="text-xs text-primary">XP</span></span>
+</div>
+<div class="grid grid-cols-2 gap-2 text-center pt-2">
+<div class="bg-surface-container p-2">
+<span class="block font-headline-sm text-headline-sm text-on-surface">31</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Referrals</span>
+</div>
+<div class="bg-surface-container p-2">
+<span class="block font-headline-sm text-headline-sm text-on-surface">14</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Missions</span>
+</div>
+</div>
+</div>
+<div class="w-full bg-surface-dim text-on-surface text-center py-2 font-label-md text-label-md uppercase font-bold tracking-wider">
+          SILVER CR LAUREL
+        </div>
+</div>
+<!-- Rank #01: Champion (NIT Trichy) - Center & Tallest -->
+<div class="order-1 md:order-2 bg-surface-container-lowest p-6 shadow-xl transition-transform hover:-translate-y-1 relative -mt-4">
+<div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-primary-container text-on-surface font-label-md text-label-md px-4 py-1.5 shadow-md uppercase flex items-center gap-1.5 font-bold tracking-widest">
+<span class="material-symbols-outlined text-[18px] text-tertiary" style="font-variation-settings: 'FILL' 1;">hotel_class</span>
+          RANK #01 // CHAMPION
+        </div>
+<div class="flex flex-col items-center text-center mt-4 mb-4">
+<div class="w-24 h-24 bg-primary-container p-1 shadow-md mb-3 relative">
+<img class="w-full h-full object-cover" data-alt="Charismatic portrait of student leader Aarav Sharma from NIT Trichy, smiling proudly, soft studio daylight, bold cyber-brutalist tech color tone." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAzzIKdPkGMLTO2lF4g6J4T1FM5sEfPlmSVuVXhyVGfchLIsnH86BVPIKiLRcTOHv3djnTIv-p5-5jPkBU9Feye_6jHraxdmLWkN-y5xz_X6PMhBoFFNUYkhxukXAjx0bBJHi2VIKLTe2iv_5jiEEUE3om0op3MNS4mujhPKkgSig5VnNIBnktk_0syKR7yTxX-09UqZjQ6vnENWwKyfjM_oVPFGRu7XKffkuumfXmEogD4ncjs3eiF">
+<div class="absolute -bottom-2 -right-2 bg-tertiary text-on-tertiary font-label-sm text-label-sm px-2 py-0.5 font-bold">#1</div>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface">Aarav Sharma</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">NIT Trichy [South Zone]</p>
+<div class="inline-flex items-center gap-1 bg-primary-container text-on-surface font-label-sm text-label-sm px-3 py-1 mt-2 font-bold uppercase shadow-sm">
+<span class="material-symbols-outlined text-[14px]">shield</span>
+            SUPREME LEADER BADGE
+          </div>
+</div>
+<div class="bg-primary-fixed text-on-primary-fixed p-5 mb-4 shadow-sm">
+<div class="flex justify-between items-center mb-3">
+<span class="font-label-md text-label-md uppercase tracking-wider font-bold">TOTAL ACCUMULATED XP:</span>
+<span class="font-headline-lg text-headline-lg text-primary-container font-black drop-shadow-sm text-on-surface">2,450</span>
+</div>
+<div class="grid grid-cols-2 gap-3 text-center">
+<div class="bg-surface-container-lowest p-2.5 shadow-sm">
+<span class="block font-headline-md text-headline-md text-on-surface font-bold">38</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Referrals Closed</span>
+</div>
+<div class="bg-surface-container-lowest p-2.5 shadow-sm">
+<span class="block font-headline-md text-headline-md text-on-surface font-bold">19</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Completed Quests</span>
+</div>
+</div>
+</div>
+<div class="w-full bg-primary-container text-on-surface text-center py-2.5 font-label-md text-label-md uppercase font-bold tracking-widest shadow-sm">
+          ★ SUPREME LEADER STATUS ★
+        </div>
+</div>
+<!-- Rank #03: Bronze Medalist (BITS Pilani) -->
+<div class="order-3 bg-surface-container-lowest p-6 shadow-md transition-transform hover:-translate-y-1 relative">
+<div class="absolute -top-3 left-4 bg-tertiary-fixed text-on-tertiary-fixed font-label-md text-label-md px-3 py-1 shadow-sm uppercase flex items-center gap-1 font-bold">
+<span class="material-symbols-outlined text-[16px]">military_tech</span>
+          RANK #03 // BRONZE
+        </div>
+<div class="flex items-center gap-4 mt-3 mb-4">
+<div class="w-16 h-16 bg-surface-container-high overflow-hidden shrink-0">
+<img class="w-full h-full object-cover" data-alt="Portrait of Karthik Raja from BITS Pilani, bright dynamic lighting, sharp civil engineering festival backdrop, bold modern collegiate style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuApkhHQ2_-jYIm0iDxGW7UZP416kwwsumnGZIgahs2Dzi3F8Zj7ubzjsPXyDuuMTvB3IqEE0-dm0EGd7kp15WVglKwSVIim0Asf8AR2z0tgvQtarGhdanFyOlfYRFlq_RbFpCmYjIQrvcOwnO30Lc5F9G4lLZlPNT_dmj9ZTQfAAjm30IfuiNYH-MH2JzSjQsITZbF87065o-P8P-xzqr7aiu4J0WNZ2Kb_OSY0h4AUZyQ-PyXNJai4">
+</div>
+<div class="min-w-0">
+<h3 class="font-headline-sm text-headline-sm text-on-surface truncate">Karthik Raja</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">BITS Pilani [North Zone]</p>
+<div class="inline-block bg-surface-variant text-on-surface font-label-sm text-label-sm px-2 py-0.5 mt-1 font-bold uppercase">
+              Elite Badge
+            </div>
+</div>
+</div>
+<div class="space-y-3 bg-surface-container-low p-4 mb-4">
+<div class="flex justify-between items-center text-sm font-bold">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Total Protocol XP:</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">1,940 <span class="text-xs text-primary">XP</span></span>
+</div>
+<div class="grid grid-cols-2 gap-2 text-center pt-2">
+<div class="bg-surface-container p-2">
+<span class="block font-headline-sm text-headline-sm text-on-surface">27</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Referrals</span>
+</div>
+<div class="bg-surface-container p-2">
+<span class="block font-headline-sm text-headline-sm text-on-surface">12</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Missions</span>
+</div>
+</div>
+</div>
+<div class="w-full bg-tertiary-fixed text-on-tertiary-fixed text-center py-2 font-label-md text-label-md uppercase font-bold tracking-wider">
+          BRONZE CR LAUREL
+        </div>
+</div>
+</div>
+</div>
+<!-- Interactive Search, Zone Selector & Controls -->
+<div class="bg-surface-container p-5 mb-6 shadow-md">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-4">
+<!-- Search Input -->
+<div class="flex-1 max-w-md relative">
+<div class="relative flex items-center">
+<span class="material-symbols-outlined absolute left-3 text-on-surface-variant text-[20px]">search</span>
+<input class="w-full bg-surface-container-lowest pl-10 pr-4 py-2.5 text-on-surface font-body-sm text-body-sm placeholder:text-outline focus:bg-surface focus:outline-none shadow-sm" id="searchInput" placeholder="SEARCH AMBASSADOR, ID, OR CAMPUS..." type="text">
+</div>
+</div>
+<!-- Zone Filter Pills -->
+<div class="flex flex-wrap items-center gap-2">
+<span class="font-label-sm text-label-sm text-on-surface uppercase mr-1">ZONE:</span>
+<button class="zone-pill active-pill px-3 py-1.5 bg-primary-container text-on-surface font-label-sm text-label-sm uppercase font-bold shadow-sm transition-transform active:translate-y-0.5" data-zone="ALL">
+          ALL ZONES
+        </button>
+<button class="zone-pill px-3 py-1.5 bg-surface-container-lowest text-on-surface-variant font-label-sm text-label-sm uppercase font-bold shadow-sm hover:text-on-surface transition-transform active:translate-y-0.5" data-zone="NORTH">
+          NORTH
+        </button>
+<button class="zone-pill px-3 py-1.5 bg-surface-container-lowest text-on-surface-variant font-label-sm text-label-sm uppercase font-bold shadow-sm hover:text-on-surface transition-transform active:translate-y-0.5" data-zone="SOUTH">
+          SOUTH
+        </button>
+<button class="zone-pill px-3 py-1.5 bg-surface-container-lowest text-on-surface-variant font-label-sm text-label-sm uppercase font-bold shadow-sm hover:text-on-surface transition-transform active:translate-y-0.5" data-zone="EAST">
+          EAST
+        </button>
+<button class="zone-pill px-3 py-1.5 bg-surface-container-lowest text-on-surface-variant font-label-sm text-label-sm uppercase font-bold shadow-sm hover:text-on-surface transition-transform active:translate-y-0.5" data-zone="WEST">
+          WEST
+        </button>
+</div>
+<!-- Sort Selection -->
+<div class="flex items-center gap-2 shrink-0">
+<span class="font-label-sm text-label-sm text-on-surface uppercase">SORT:</span>
+<select class="bg-surface-container-lowest text-on-surface font-label-sm text-label-sm px-3 py-2 uppercase shadow-sm focus:outline-none cursor-pointer" id="sortSelect">
+<option value="xp-desc">XP DESCENDING (HIGH-LOW)</option>
+<option value="quests-desc">MISSIONS COMPLETED</option>
+<option value="referrals-desc">REFERRALS COUNT</option>
+</select>
+</div>
+</div>
+</div>
+<!-- Arcade Scoreboard Table (Ranks 04 - 12) -->
+<div class="w-full bg-surface-container-lowest shadow-xl mb-12 overflow-hidden">
+<div class="bg-surface-container-high px-6 py-3 flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[20px]">leaderboard</span>
+<span class="font-label-md text-label-md uppercase font-bold text-on-surface">LEAGUE ARENA ROSTER // RANKS 04 TO 12</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">AUTOSYNC: 30S INTERVAL</span>
+</div>
+<div class="overflow-x-auto">
+<table class="w-full text-left border-collapse" id="scoreboardTable">
+<thead>
+<tr class="bg-surface-container text-on-surface-variant font-label-sm text-label-sm uppercase">
+<th class="py-3 px-4 w-16 text-center">RANK</th>
+<th class="py-3 px-4">AMBASSADOR &amp; INSTITUTE</th>
+<th class="py-3 px-4 w-28 text-center">ZONE</th>
+<th class="py-3 px-4 w-32 text-center">MISSIONS</th>
+<th class="py-3 px-4 w-32 text-center">REFERRALS</th>
+<th class="py-3 px-4 w-36 text-right">TOTAL XP</th>
+<th class="py-3 px-4 w-28 text-center">STATUS</th>
+</tr>
+</thead>
+<tbody class="divide-y-0" id="tableBody">
+<!-- Rank 04 -->
+<tr class="table-row-item hover:bg-surface-container transition-colors" data-college="Jadavpur Univ" data-name="Ananya Roy" data-quests="11" data-refs="24" data-xp="1810" data-zone="EAST">
+<td class="py-4 px-4 font-label-md text-label-md text-center font-bold text-on-surface bg-surface-container-low">#04</td>
+<td class="py-4 px-4">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 bg-surface-container flex items-center justify-center font-bold text-xs uppercase">AR</div>
+<div>
+<div class="font-headline-sm text-headline-sm text-on-surface leading-tight">Ananya Roy</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Jadavpur University, Kolkata</div>
+</div>
+</div>
+</td>
+<td class="py-4 px-4 text-center">
+<span class="bg-surface-container px-2 py-0.5 font-label-sm text-label-sm font-bold uppercase">EAST</span>
+</td>
+<td class="py-4 px-4 text-center font-label-md text-label-md">11</td>
+<td class="py-4 px-4 text-center font-label-md text-label-md">24</td>
+<td class="py-4 px-4 text-right font-headline-sm text-headline-sm text-primary font-bold">1,810 <span class="text-xs">XP</span></td>
+<td class="py-4 px-4 text-center">
+<span class="bg-secondary-fixed text-on-secondary-fixed px-2 py-0.5 font-label-sm text-label-sm uppercase font-bold">VANGUARD</span>
+</td>
+</tr>
+<!-- Rank 05 -->
+<tr class="table-row-item bg-surface-container-low hover:bg-surface-container transition-colors" data-college="VNIT Nagpur" data-name="Rohan Kulkarni" data-quests="10" data-refs="22" data-xp="1720" data-zone="WEST">
+<td class="py-4 px-4 font-label-md text-label-md text-center font-bold text-on-surface bg-surface-container">#05</td>
+<td class="py-4 px-4">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 bg-surface-container-high flex items-center justify-center font-bold text-xs uppercase">RK</div>
+<div>
+<div class="font-headline-sm text-headline-sm text-on-surface leading-tight">Rohan Kulkarni</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">VNIT Nagpur</div>
+</div>
+</div>
+</td>
+<td class="py-4 px-4 text-center">
+<span class="bg-surface-container px-2 py-0.5 font-label-sm text-label-sm font-bold uppercase">WEST</span>
+</td>
+<td class="py-4 px-4 text-center font-label-md text-label-md">10</td>
+<td class="py-4 px-4 text-center font-label-md text-label-md">22</td>
+<td class="py-4 px-4 text-right font-headline-sm text-headline-sm text-primary font-bold">1,720 <span class="text-xs">XP</span></td>
+<td class="py-4 px-4 text-center">
+<span class="bg-secondary-fixed text-on-secondary-fixed px-2 py-0.5 font-label-sm text-label-sm uppercase font-bold">VANGUARD</span>
+</td>
+</tr>
+<!-- Rank 06 -->
+<tr class="table-row-item hover:bg-surface-container transition-colors" data-college="DTU Delhi" data-name="Siddharth Verma" data-quests="9" data-refs="21" data-xp="1650" data-zone="NORTH">
+<td class="py-4 px-4 font-label-md text-label-md text-center font-bold text-on-surface bg-surface-container-low">#06</td>
+<td class="py-4 px-4">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 bg-surface-container flex items-center justify-center font-bold text-xs uppercase">SV</div>
+<div>
+<div class="font-headline-sm text-headline-sm text-on-surface leading-tight">Siddharth Verma</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">DTU Delhi</div>
+</div>
+</div>
+</td>
+<td class="py-4 px-4 text-center">
+<span class="bg-surface-container px-2 py-0.5 font-label-sm text-label-sm font-bold uppercase">NORTH</span>
+</td>
+<td class="py-4 px-4 text-center font-label-md text-label-md">09</td>
+<td class="py-4 px-4 text-center font-label-md text-label-md">21</td>
+<td class="py-4 px-4 text-right font-headline-sm text-headline-sm text-primary font-bold">1,650 <span class="text-xs">XP</span></td>
+<td class="py-4 px-4 text-center">
+<span class="bg-surface-variant text-on-surface px-2 py-0.5 font-label-sm text-label-sm uppercase font-bold">OFFICER</span>
+</td>
+</tr>
+<!-- Rank 07 -->
+<tr class="table-row-item bg-surface-container-low hover:bg-surface-container transition-colors" data-college="NIT Calicut" data-name="Meera Nair" data-quests="9" data-refs="19" data-xp="1590" data-zone="SOUTH">
+<td class="py-4 px-4 font-label-md text-label-md text-center font-bold text-on-surface bg-surface-container">#07</td>
+<td class="py-4 px-4">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 bg-surface-container-high flex items-center justify-center font-bold text-xs uppercase">MN</div>
+<div>
+<div class="font-headline-sm text-headline-sm text-on-surface leading-tight">Meera Nair</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">NIT Calicut</div>
+</div>
+</div>
+</td>
+<td class="py-4 px-4 text-center">
+<span class="bg-surface-container px-2 py-0.5 font-label-sm text-label-sm font-bold uppercase">SOUTH</span>
+</td>
+<td class="py-4 px-4 text-center font-label-md text-label-md">09</td>
+<td class="py-4 px-4 text-center font-label-md text-label-md">19</td>
+<td class="py-4 px-4 text-right font-headline-sm text-headline-sm text-primary font-bold">1,590 <span class="text-xs">XP</span></td>
+<td class="py-4 px-4 text-center">
+<span class="bg-surface-variant text-on-surface px-2 py-0.5 font-label-sm text-label-sm uppercase font-bold">OFFICER</span>
+</td>
+</tr>
+<!-- Rank 08 -->
+<tr class="table-row-item hover:bg-surface-container transition-colors" data-college="SVNIT Surat" data-name="Aditya Patel" data-quests="8" data-refs="18" data-xp="1480" data-zone="WEST">
+<td class="py-4 px-4 font-label-md text-label-md text-center font-bold text-on-surface bg-surface-container-low">#08</td>
+<td class="py-4 px-4">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 bg-surface-container flex items-center justify-center font-bold text-xs uppercase">AP</div>
+<div>
+<div class="font-headline-sm text-headline-sm text-on-surface leading-tight">Aditya Patel</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">SVNIT Surat</div>
+</div>
+</div>
+</td>
+<td class="py-4 px-4 text-center">
+<span class="bg-surface-container px-2 py-0.5 font-label-sm text-label-sm font-bold uppercase">WEST</span>
+</td>
+<td class="py-4 px-4 text-center font-label-md text-label-md">08</td>
+<td class="py-4 px-4 text-center font-label-md text-label-md">18</td>
+<td class="py-4 px-4 text-right font-headline-sm text-headline-sm text-primary font-bold">1,480 <span class="text-xs">XP</span></td>
+<td class="py-4 px-4 text-center">
+<span class="bg-surface-variant text-on-surface px-2 py-0.5 font-label-sm text-label-sm uppercase font-bold">OFFICER</span>
+</td>
+</tr>
+<!-- Rank 09 -->
+<tr class="table-row-item bg-surface-container-low hover:bg-surface-container transition-colors" data-college="VJTI Mumbai" data-name="Tanvi Joshi" data-quests="8" data-refs="16" data-xp="1410" data-zone="WEST">
+<td class="py-4 px-4 font-label-md text-label-md text-center font-bold text-on-surface bg-surface-container">#09</td>
+<td class="py-4 px-4">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 bg-surface-container-high flex items-center justify-center font-bold text-xs uppercase">TJ</div>
+<div>
+<div class="font-headline-sm text-headline-sm text-on-surface leading-tight">Tanvi Joshi</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">VJTI Mumbai</div>
+</div>
+</div>
+</td>
+<td class="py-4 px-4 text-center">
+<span class="bg-surface-container px-2 py-0.5 font-label-sm text-label-sm font-bold uppercase">WEST</span>
+</td>
+<td class="py-4 px-4 text-center font-label-md text-label-md">08</td>
+<td class="py-4 px-4 text-center font-label-md text-label-md">16</td>
+<td class="py-4 px-4 text-right font-headline-sm text-headline-sm text-primary font-bold">1,410 <span class="text-xs">XP</span></td>
+<td class="py-4 px-4 text-center">
+<span class="bg-surface-variant text-on-surface px-2 py-0.5 font-label-sm text-label-sm uppercase font-bold">OFFICER</span>
+</td>
+</tr>
+<!-- Rank 10 -->
+<tr class="table-row-item hover:bg-surface-container transition-colors" data-college="IIT BHU" data-name="Harsh Vardhan" data-quests="7" data-refs="15" data-xp="1350" data-zone="NORTH">
+<td class="py-4 px-4 font-label-md text-label-md text-center font-bold text-on-surface bg-surface-container-low">#10</td>
+<td class="py-4 px-4">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 bg-surface-container flex items-center justify-center font-bold text-xs uppercase">HV</div>
+<div>
+<div class="font-headline-sm text-headline-sm text-on-surface leading-tight">Harsh Vardhan</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">IIT BHU Varanasi</div>
+</div>
+</div>
+</td>
+<td class="py-4 px-4 text-center">
+<span class="bg-surface-container px-2 py-0.5 font-label-sm text-label-sm font-bold uppercase">NORTH</span>
+</td>
+<td class="py-4 px-4 text-center font-label-md text-label-md">07</td>
+<td class="py-4 px-4 text-center font-label-md text-label-md">15</td>
+<td class="py-4 px-4 text-right font-headline-sm text-headline-sm text-primary font-bold">1,350 <span class="text-xs">XP</span></td>
+<td class="py-4 px-4 text-center">
+<span class="bg-surface-variant text-on-surface px-2 py-0.5 font-label-sm text-label-sm uppercase font-bold">SCOUT</span>
+</td>
+</tr>
+<!-- Rank 11 -->
+<tr class="table-row-item bg-surface-container-low hover:bg-surface-container transition-colors" data-college="IIEST Shibpur" data-name="Ritu Sen" data-quests="6" data-refs="14" data-xp="1290" data-zone="EAST">
+<td class="py-4 px-4 font-label-md text-label-md text-center font-bold text-on-surface bg-surface-container">#11</td>
+<td class="py-4 px-4">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 bg-surface-container-high flex items-center justify-center font-bold text-xs uppercase">RS</div>
+<div>
+<div class="font-headline-sm text-headline-sm text-on-surface leading-tight">Ritu Sen</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">IIEST Shibpur</div>
+</div>
+</div>
+</td>
+<td class="py-4 px-4 text-center">
+<span class="bg-surface-container px-2 py-0.5 font-label-sm text-label-sm font-bold uppercase">EAST</span>
+</td>
+<td class="py-4 px-4 text-center font-label-md text-label-md">06</td>
+<td class="py-4 px-4 text-center font-label-md text-label-md">14</td>
+<td class="py-4 px-4 text-right font-headline-sm text-headline-sm text-primary font-bold">1,290 <span class="text-xs">XP</span></td>
+<td class="py-4 px-4 text-center">
+<span class="bg-surface-variant text-on-surface px-2 py-0.5 font-label-sm text-label-sm uppercase font-bold">SCOUT</span>
+</td>
+</tr>
+<!-- Rank 12 -->
+<tr class="table-row-item hover:bg-surface-container transition-colors" data-college="MNIT Jaipur" data-name="Vikram Rathore" data-quests="6" data-refs="12" data-xp="1220" data-zone="NORTH">
+<td class="py-4 px-4 font-label-md text-label-md text-center font-bold text-on-surface bg-surface-container-low">#12</td>
+<td class="py-4 px-4">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 bg-surface-container flex items-center justify-center font-bold text-xs uppercase">VR</div>
+<div>
+<div class="font-headline-sm text-headline-sm text-on-surface leading-tight">Vikram Rathore</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">MNIT Jaipur</div>
+</div>
+</div>
+</td>
+<td class="py-4 px-4 text-center">
+<span class="bg-surface-container px-2 py-0.5 font-label-sm text-label-sm font-bold uppercase">NORTH</span>
+</td>
+<td class="py-4 px-4 text-center font-label-md text-label-md">06</td>
+<td class="py-4 px-4 text-center font-label-md text-label-md">12</td>
+<td class="py-4 px-4 text-right font-headline-sm text-headline-sm text-primary font-bold">1,220 <span class="text-xs">XP</span></td>
+<td class="py-4 px-4 text-center">
+<span class="bg-surface-variant text-on-surface px-2 py-0.5 font-label-sm text-label-sm uppercase font-bold">SCOUT</span>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Table Pagination / Status Bar -->
+<div class="bg-surface-container-high p-4 flex flex-col sm:flex-row items-center justify-between gap-4 font-label-sm text-label-sm">
+<span class="text-on-surface-variant">SHOWING 9 OF 1,420 ACTIVE REPRESENTATIVES</span>
+<div class="flex items-center gap-2">
+<button class="px-3 py-1.5 bg-surface-container-lowest text-on-surface uppercase font-bold shadow-sm cursor-not-allowed opacity-50">PREV</button>
+<span class="px-3 py-1.5 bg-primary-container text-on-surface font-bold">PAGE 01</span>
+<button class="px-3 py-1.5 bg-surface-container-lowest text-on-surface uppercase font-bold shadow-sm hover:bg-surface">NEXT</button>
+</div>
+</div>
+</div>
+<!-- 'How to Earn XP & Climb the Ranks' Protocol Guide -->
+<div class="mb-12">
+<div class="flex items-center justify-between mb-6">
+<div>
+<span class="font-label-sm text-label-sm text-tertiary uppercase font-bold block mb-1">STRATEGIC PLAYBOOK //</span>
+<h2 class="font-headline-md text-headline-md uppercase text-on-surface">HOW TO EARN XP &amp; CLIMB THE RANKS</h2>
+</div>
+<div class="hidden sm:flex items-center gap-1 font-label-sm text-label-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-[16px]">info</span>
+        AUTOMATIC XP VERIFICATION ENGINE
+      </div>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+<!-- Card 1: Student Registration -->
+<div class="bg-surface-container-lowest p-6 shadow-md hover:-translate-y-1 transition-transform flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-4">
+<span class="bg-primary-container text-on-surface font-headline-sm text-headline-sm px-2.5 py-1 font-bold">+50 XP</span>
+<span class="material-symbols-outlined text-on-surface text-[24px]">group_add</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface uppercase mb-2">Student Registration</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-4">
+            Every peer or junior who registers for Aakaar using your referral code adds +50 protocol XP instantly.
+          </p>
+</div>
+<div class="bg-surface-container p-2.5 font-label-sm text-label-sm text-on-surface font-bold uppercase">
+          TRIGGER: CODE APPLIED
+        </div>
+</div>
+<!-- Card 2: Event Team Entry -->
+<div class="bg-surface-container-lowest p-6 shadow-md hover:-translate-y-1 transition-transform flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-4">
+<span class="bg-secondary-container text-on-secondary-container font-headline-sm text-headline-sm px-2.5 py-1 font-bold">+150 XP</span>
+<span class="material-symbols-outlined text-on-surface text-[24px]">engineering</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface uppercase mb-2">Event Team Entry</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-4">
+            Facilitate complete team delegations for flagship competitions like Bridge Architecture, Smart City GIS, or Concrete Blocks.
+          </p>
+</div>
+<div class="bg-surface-container p-2.5 font-label-sm text-label-sm text-on-surface font-bold uppercase">
+          TRIGGER: TEAM VALIDATED
+        </div>
+</div>
+<!-- Card 3: Social Amplify -->
+<div class="bg-surface-container-lowest p-6 shadow-md hover:-translate-y-1 transition-transform flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-4">
+<span class="bg-surface-dim text-on-surface font-headline-sm text-headline-sm px-2.5 py-1 font-bold">+25 XP</span>
+<span class="material-symbols-outlined text-on-surface text-[24px]">campaign</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface uppercase mb-2">Social Amplify</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-4">
+            Share official posters, Instagram reels, and LinkedIn announcements with proof upload to the CR dashboard.
+          </p>
+</div>
+<div class="bg-surface-container p-2.5 font-label-sm text-label-sm text-on-surface font-bold uppercase">
+          TRIGGER: PROOF SCREENSHOT
+        </div>
+</div>
+<!-- Card 4: Host Workshop -->
+<div class="bg-surface-container-lowest p-6 shadow-md hover:-translate-y-1 transition-transform flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-4">
+<span class="bg-tertiary text-on-tertiary font-headline-sm text-headline-sm px-2.5 py-1 font-bold">+400 XP</span>
+<span class="material-symbols-outlined text-on-surface text-[24px]">school</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface uppercase mb-2">Host Workshop</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-4">
+            Coordinate with your college HOD to execute an official Aakaar pre-festival technical seminar or BIM workshop.
+          </p>
+</div>
+<div class="bg-surface-container p-2.5 font-label-sm text-label-sm text-on-surface font-bold uppercase">
+          TRIGGER: HOD ENDORSEMENT
+        </div>
+</div>
+</div>
+</div>
+<!-- Bottom CTA: Dynamic Arena Check -->
+<div class="w-full bg-primary-container p-8 sm:p-12 shadow-xl mb-6 relative overflow-hidden">
+<div class="max-w-3xl mx-auto text-center flex flex-col items-center">
+<div class="inline-flex items-center gap-1.5 bg-surface text-on-surface px-3 py-1 font-label-sm text-label-sm uppercase font-bold mb-4 shadow-sm">
+<span class="material-symbols-outlined text-[16px] text-tertiary">sports_score</span>
+        YOUR PERSONAL CONSOLE
+      </div>
+<h2 class="font-headline-xl text-headline-xl text-on-surface uppercase font-bold tracking-tight mb-4">
+        WHERE DO YOU STAND IN THE ARENA?
+      </h2>
+<p class="font-body-lg text-body-lg text-on-surface mb-8 max-w-xl">
+        Authenticate your credentials to decrypt your individual tier ranking, active mission checklist, and claimable IIT Bombay merchandise.
+      </p>
+<div class="flex flex-col sm:flex-row items-center gap-4 w-full sm:w-auto">
+<a class="w-full sm:w-auto px-8 py-3.5 bg-surface text-on-surface font-headline-sm text-headline-sm uppercase font-bold shadow-lg hover:-translate-y-0.5 transition-all text-center" href="#">
+          LOGIN TO VIEW RANK
+        </a>
+<a class="w-full sm:w-auto px-8 py-3.5 bg-surface-container-high text-on-surface font-headline-sm text-headline-sm uppercase font-bold shadow-sm hover:bg-surface transition-all text-center" href="#">
+          REGISTER AS NEW CR
+        </a>
+</div>
+</div>
+</div>
+<!-- Interactive JavaScript logic for dynamic search, sorting, and zone filtering -->
+<script>
+    (function() {
+      const searchInput = document.getElementById('searchInput');
+      const sortSelect = document.getElementById('sortSelect');
+      const zonePills = document.querySelectorAll('.zone-pill');
+      const tableBody = document.getElementById('tableBody');
+      const rows = Array.from(document.querySelectorAll('.table-row-item'));
+
+      let currentZone = 'ALL';
+
+      function updateTable() {
+        const query = (searchInput.value || '').toLowerCase().trim();
+
+        // Filter
+        const filtered = rows.filter(row => {
+          const zone = row.getAttribute('data-zone');
+          const name = row.getAttribute('data-name').toLowerCase();
+          const college = row.getAttribute('data-college').toLowerCase();
+
+          const matchesZone = (currentZone === 'ALL' || zone === currentZone);
+          const matchesQuery = (!query || name.includes(query) || college.includes(query));
+
+          return matchesZone && matchesQuery;
+        });
+
+        // Sort
+        const sortVal = sortSelect.value;
+        filtered.sort((a, b) => {
+          if (sortVal === 'xp-desc') {
+            return parseInt(b.getAttribute('data-xp'), 10) - parseInt(a.getAttribute('data-xp'), 10);
+          } else if (sortVal === 'quests-desc') {
+            return parseInt(b.getAttribute('data-quests'), 10) - parseInt(a.getAttribute('data-quests'), 10);
+          } else if (sortVal === 'referrals-desc') {
+            return parseInt(b.getAttribute('data-refs'), 10) - parseInt(a.getAttribute('data-refs'), 10);
+          }
+          return 0;
+        });
+
+        // Re-render
+        tableBody.innerHTML = '';
+        if (filtered.length === 0) {
+          const emptyRow = document.createElement('tr');
+          emptyRow.innerHTML = `<td colspan="7" class="py-8 text-center font-label-md text-label-md text-on-surface-variant uppercase">NO CANDIDATES MATCH TELEMETRY FILTER</td>`;
+          tableBody.appendChild(emptyRow);
+        } else {
+          filtered.forEach(row => tableBody.appendChild(row));
+        }
+      }
+
+      if (searchInput) {
+        searchInput.addEventListener('input', updateTable);
+      }
+
+      if (sortSelect) {
+        sortSelect.addEventListener('change', updateTable);
+      }
+
+      zonePills.forEach(pill => {
+        pill.addEventListener('click', function() {
+          zonePills.forEach(p => {
+            p.classList.remove('bg-primary-container', 'text-on-surface');
+            p.classList.add('bg-surface-container-lowest', 'text-on-surface-variant');
+          });
+          this.classList.remove('bg-surface-container-lowest', 'text-on-surface-variant');
+          this.classList.add('bg-primary-container', 'text-on-surface');
+          currentZone = this.getAttribute('data-zone');
+          updateTable();
+        });
+      });
+    })();
+  </script>
+</div></div></main><footer class="w-full bg-surface-container-low border-t-2 border-on-surface mt-auto"><div class="max-w-[1280px] mx-auto px-margin py-space-lg flex flex-col md:flex-row items-center justify-between gap-6"><div class="flex flex-col items-center md:items-start gap-1"><span class="font-label-md text-label-md text-on-surface uppercase tracking-wider">AAKAAR IIT BOMBAY | © 2026 Civil Engineering Association, IIT Bombay. [LIGHT PROTOCOL]</span><span class="font-body-sm text-body-sm text-on-surface-variant">Tactile Blueprint HUD &amp; Campus Ambassador Network</span></div><div class="flex items-center gap-2"><a class="w-9 h-9 border-2 border-on-surface bg-surface-container-lowest flex items-center justify-center pixel-box-shadow-sm hover:translate-x-0.5 hover:translate-y-0.5 hover:shadow-none transition-all" href="#"><span class="material-symbols-outlined text-on-surface text-[18px]">terminal</span></a><a class="w-9 h-9 border-2 border-on-surface bg-surface-container-lowest flex items-center justify-center pixel-box-shadow-sm hover:translate-x-0.5 hover:translate-y-0.5 hover:shadow-none transition-all" href="#"><span class="material-symbols-outlined text-on-surface text-[18px]">share</span></a><a class="w-9 h-9 border-2 border-on-surface bg-surface-container-lowest flex items-center justify-center pixel-box-shadow-sm hover:translate-x-0.5 hover:translate-y-0.5 hover:shadow-none transition-all" href="#"><span class="material-symbols-outlined text-on-surface text-[18px]">photo_camera</span></a><a class="w-9 h-9 border-2 border-on-surface bg-surface-container-lowest flex items-center justify-center pixel-box-shadow-sm hover:translate-x-0.5 hover:translate-y-0.5 hover:shadow-none transition-all" href="#"><span class="material-symbols-outlined text-on-surface text-[18px]">link</span></a></div><div class="font-label-sm text-label-sm text-on-surface-variant text-center md:text-right uppercase">Crafted for Civil Engineering Excellence &amp; Pixel Concrete 💛</div></div></footer><script src="assets/js/page-controls.js"></script><script src="assets/js/site-shell.js"></script></body></html>
