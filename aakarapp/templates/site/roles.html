@@ -1,0 +1,518 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><meta content="web_standard" name="shell-type"><title>Aakaar IIT Bombay - CR Portal '26</title><link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&amp;family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}.bg-grid-pattern{background-size:24px 24px;background-image:linear-gradient(to right,rgba(28,27,27,0.06) 1px,transparent 1px),linear-gradient(to bottom,rgba(28,27,27,0.06) 1px,transparent 1px);}.pixel-box-shadow{box-shadow:4px 4px 0px #1c1b1b;}.pixel-box-shadow-sm{box-shadow:2px 2px 0px #1c1b1b;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "surface-container-low": "#f6f3f2", "tertiary-fixed-dim": "#ffb59d", "surface-dim": "#dcd9d9", "on-tertiary-fixed-variant": "#832600", "surface-container-high": "#ebe7e7", "background": "#fcf9f8", "on-primary-container": "#6f5700", "on-tertiary": "#ffffff", "surface-bright": "#fcf9f8", "on-error": "#ffffff", "surface-variant": "#e5e2e1", "on-error-container": "#93000a", "error-container": "#ffdad6", "primary-fixed-dim": "#f1c100", "on-background": "#1c1b1b", "secondary-fixed": "#7df4ff", "surface": "#fcf9f8", "surface-container-highest": "#e5e2e1", "error": "#ba1a1a", "secondary-container": "#00eefc", "on-primary": "#ffffff", "surface-tint": "#745b00", "on-secondary-fixed": "#002022", "outline-variant": "#d2c5ab", "outline": "#80765f", "on-tertiary-fixed": "#390c00", "primary-fixed": "#ffe08b", "on-secondary-container": "#00686f", "on-surface-variant": "#4e4632", "on-tertiary-container": "#a43200", "secondary": "#006970", "inverse-surface": "#313030", "on-surface": "#1c1b1b", "tertiary-fixed": "#ffdbd0", "on-secondary": "#ffffff", "primary-container": "#ffcc00", "on-secondary-fixed-variant": "#004f54", "on-primary-fixed": "#241a00", "tertiary": "#ab3500", "inverse-on-surface": "#f3f0ef", "primary": "#745b00", "surface-container": "#f0edec", "surface-container-lowest": "#ffffff", "on-primary-fixed-variant": "#584400", "secondary-fixed-dim": "#00dbe9", "tertiary-container": "#ffc5b3", "inverse-primary": "#f1c100" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-lg": "1.5rem", "space-xs": "0.25rem", "margin": "2rem", "space-sm": "0.5rem", "margin-sm": "1rem", "space-xl": "2.5rem", "gutter-sm": "1rem", "space-md": "1rem", "gutter": "1.5rem" }, "fontFamily": { "headline-lg-mobile": [ "Space Mono" ], "headline-md": [ "Space Mono" ], "label-lg": [ "Space Mono" ], "body-md": [ "Space Mono" ], "body-lg": [ "Space Mono" ], "headline-lg": [ "Space Mono" ], "label-md": [ "Space Mono" ], "headline-sm": [ "Space Mono" ], "headline-xl": [ "Space Mono" ], "body-sm": [ "Space Mono" ], "headline-xl-mobile": [ "Space Mono" ], "label-sm": [ "Space Mono" ] }, "fontSize": { "headline-lg-mobile": [ "24px", { "lineHeight": "32px", "fontWeight": "700" } ], "headline-md": [ "24px", { "lineHeight": "32px", "fontWeight": "700" } ], "label-lg": [ "14px", { "lineHeight": "20px", "fontWeight": "700" } ], "body-md": [ "14px", { "lineHeight": "22px", "fontWeight": "400" } ], "body-lg": [ "16px", { "lineHeight": "26px", "fontWeight": "400" } ], "headline-lg": [ "32px", { "lineHeight": "40px", "fontWeight": "700" } ], "label-md": [ "12px", { "lineHeight": "16px", "fontWeight": "700" } ], "headline-sm": [ "20px", { "lineHeight": "28px", "fontWeight": "700" } ], "headline-xl": [ "40px", { "lineHeight": "48px", "fontWeight": "700" } ], "body-sm": [ "12px", { "lineHeight": "18px", "fontWeight": "400" } ], "headline-xl-mobile": [ "28px", { "lineHeight": "36px", "fontWeight": "700" } ], "label-sm": [ "10px", { "lineHeight": "14px", "fontWeight": "700" } ] } } } };</script></head><body class="bg-surface font-body-md text-on-surface bg-grid-pattern min-h-screen flex flex-col"><!-- BEGIN: MainHeader -->
+<header class="sticky top-0 z-50 bg-[#f4f4f4] border-b-4 border-black" style="color: #000; min-width: max-content;">
+<div class="px-4 h-24 flex items-center justify-between font-mono text-black font-bold uppercase text-[10px] sm:text-[11px] gap-2 lg:gap-4 max-w-none">
+<!-- Brand Logo -->
+<a class="flex items-center space-x-2 shrink-0" href="index.html" title="Aakaar CR Portal 2026">
+<span class="text-2xl sm:text-3xl font-black tracking-tighter" style="font-family: 'Space Mono', monospace;">AAKAAR</span>
+<div class="bg-[#FFD026] text-black border-2 border-black px-2 py-1 shadow-[2px_2px_0_#000] text-[10px]">
+CR '26
+</div>
+</a>
+
+<!-- Navigation Tabs -->
+<nav aria-label="Main Navigation" class="hidden xl:flex items-stretch gap-2 h-12 lg:h-14">
+<a class="flex items-center justify-center px-4 bg-white border-2 border-black hover:bg-[#FFD026] hover:shadow-[4px_4px_0_#000] hover:-translate-y-0.5 transition-all text-center leading-tight  text-black font-bold" href="index.html">HOME</a>
+<a class="flex items-center justify-center px-4 bg-white border-2 border-black hover:bg-[#FFD026] hover:shadow-[4px_4px_0_#000] hover:-translate-y-0.5 transition-all text-center leading-tight  text-black font-bold" href="about.html">ABOUT</a>
+<a class="flex items-center justify-center px-3 bg-[#FFD026] border-2 border-black shadow-[4px_4px_0_#000] transition-all text-center leading-tight  font-bold" href="roles.html">ROLES<br>&amp;<br>QUESTS</a>
+<a class="flex items-center justify-center px-3 bg-white border-2 border-black hover:bg-[#FFD026] hover:shadow-[4px_4px_0_#000] hover:-translate-y-0.5 transition-all text-center leading-tight  text-black font-bold" href="incentives.html">INCENTIVES<br>&amp; LOOT</a>
+<a class="flex items-center justify-center px-4 bg-white border-2 border-black hover:bg-[#FFD026] hover:shadow-[4px_4px_0_#000] hover:-translate-y-0.5 transition-all text-center leading-tight text-[13px] text-black font-bold" href="leaderboard.html">SCORES /<br>LEADERBOARD</a>
+<a class="flex items-center justify-center px-4 bg-white border-2 border-black hover:bg-[#FFD026] hover:shadow-[4px_4px_0_#000] hover:-translate-y-0.5 transition-all text-center leading-tight  text-black font-bold" href="faq.html">FAQS</a>
+<a class="flex items-center justify-center px-3 bg-white border-2 border-black hover:bg-[#FFD026] hover:shadow-[4px_4px_0_#000] hover:-translate-y-0.5 transition-all text-center leading-tight  text-black font-bold" href="team.html">TEAM &amp;<br>CONTACT</a>
+</nav>
+
+<!-- Right Header Actions -->
+<div class="flex items-center gap-2 lg:gap-3 shrink-0 h-10 lg:h-12">
+<button data-site-theme class="flex items-center justify-center px-4 h-full bg-[#e8e8e8] border-2 border-black shadow-[3px_3px_0_#000] hover:bg-white hover:translate-x-[1px] hover:translate-y-[1px] hover:shadow-[2px_2px_0_#000] transition-all" type="button">
+<span id="theme-label-text">DAY: ON</span>
+</button>
+<a class="flex items-center justify-center px-5 h-full bg-[#FFD026] border-2 border-black shadow-[4px_4px_0_#000] hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-[2px_2px_0_#000] transition-all text-[12px] sm:text-[13px]" href="index.html#portal-access">
+LOGIN / REGISTER
+</a>
+</div>
+</div>
+</header>
+<!-- END: MainHeader --><main class="w-full pt-20 flex-1"><div class="max-w-[1280px] mx-auto px-margin py-space-lg"><div class="flex flex-col w-full">
+<!-- HUD Sub-Header / Mission Intel Banner -->
+<div class="flex flex-wrap items-center justify-between gap-3 mb-space-md bg-surface-container-lowest p-3 border-2 border-on-surface pixel-box-shadow-sm">
+<div class="flex items-center gap-2">
+<span class="inline-block w-2.5 h-2.5 bg-tertiary"></span>
+<span class="font-label-sm text-label-sm tracking-wider uppercase text-on-surface font-bold">[ QUEST LOG : OFFICIAL AMBASSADOR RESPONSIBILITIES ]</span>
+</div>
+<div class="flex items-center gap-3">
+<span class="bg-primary-container text-on-primary-fixed border border-on-surface px-2 py-0.5 font-label-sm text-label-sm tracking-widest uppercase">SEASON: 2026 // LIVE</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-bold">PROTO-VER: 4.8.2</span>
+</div>
+</div>
+<!-- Primary Header & Telemetry Grid -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter mb-space-xl">
+<!-- Intro & Narrative -->
+<div class="lg:col-span-7 flex flex-col justify-between bg-surface-container-lowest p-space-lg border-2 border-on-surface pixel-box-shadow">
+<div>
+<div class="flex items-center gap-2 mb-2">
+<span class="material-symbols-outlined text-tertiary text-[20px]">military_tech</span>
+<span class="font-label-md text-label-md text-tertiary uppercase tracking-widest font-bold">OPERATIONAL DIRECTIVE</span>
+</div>
+<h1 class="font-headline-xl text-headline-xl uppercase tracking-tight text-on-surface mb-3">CR ROLES &amp; DAILY MISSIONS</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-4 leading-relaxed">
+          Welcome to the frontline, Ambassador. Field operations for Aakaar '26 demand razor-sharp communication, strategic outreach, and civil engineering mobilization across India. Complete authorized directives, broadcast tactical intelligence, and harvest XP to secure direct access keys to IIT Bombay.
+        </p>
+</div>
+<div class="flex flex-wrap items-center gap-3 pt-3 border-t-2 border-surface-variant">
+<div class="flex items-center gap-2 text-on-surface">
+<span class="material-symbols-outlined text-[18px]">verified_user</span>
+<span class="font-label-sm text-label-sm uppercase font-bold">CEA Validated Dossier</span>
+</div>
+<div class="w-1 h-1 bg-on-surface"></div>
+<div class="flex items-center gap-2 text-on-surface">
+<span class="material-symbols-outlined text-[18px]">bolt</span>
+<span class="font-label-sm text-label-sm uppercase font-bold">Real-time Telemetry Active</span>
+</div>
+</div>
+</div>
+<!-- Quick Telemetry 4-Stat Bento Panel -->
+<div class="lg:col-span-5 grid grid-cols-2 gap-3">
+<div class="bg-surface-container p-space-md border-2 border-on-surface pixel-box-shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between text-on-surface-variant mb-2">
+<span class="font-label-sm text-label-sm uppercase">CR Network</span>
+<span class="material-symbols-outlined text-[20px]">groups</span>
+</div>
+<div>
+<div class="font-headline-lg text-headline-lg text-on-surface font-bold">4.2K+</div>
+<div class="font-label-sm text-label-sm text-secondary uppercase tracking-tight mt-1">▲ Active Mobilizers</div>
+</div>
+</div>
+<div class="bg-surface-container p-space-md border-2 border-on-surface pixel-box-shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between text-on-surface-variant mb-2">
+<span class="font-label-sm text-label-sm uppercase">Campuses</span>
+<span class="material-symbols-outlined text-[20px]">domain</span>
+</div>
+<div>
+<div class="font-headline-lg text-headline-lg text-on-surface font-bold">1,200+</div>
+<div class="font-label-sm text-label-sm text-tertiary uppercase tracking-tight mt-1">Pan-India Outposts</div>
+</div>
+</div>
+<div class="bg-surface-container p-space-md border-2 border-on-surface pixel-box-shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between text-on-surface-variant mb-2">
+<span class="font-label-sm text-label-sm uppercase">Max XP Drop</span>
+<span class="material-symbols-outlined text-[20px]">token</span>
+</div>
+<div>
+<div class="font-headline-lg text-headline-lg text-on-surface font-bold">2,600</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-tight mt-1">Per Operations Cycle</div>
+</div>
+</div>
+<div class="bg-primary-container p-space-md border-2 border-on-surface pixel-box-shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between text-on-primary-fixed mb-2">
+<span class="font-label-sm text-label-sm uppercase font-bold">Tier Unlock</span>
+<span class="material-symbols-outlined text-[20px]">key</span>
+</div>
+<div>
+<div class="font-headline-md text-headline-md text-on-surface font-bold tracking-tight">IITB_PASS</div>
+<div class="font-label-sm text-label-sm text-on-primary-container uppercase tracking-tight mt-1">VIP Stage Clearance</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Ambassador Specializations: 6 Chunky Neo-Brutalist Cards -->
+<div class="mb-space-xl">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-3 mb-space-md pb-2 border-b-2 border-on-surface">
+<div>
+<div class="font-label-sm text-label-sm text-tertiary uppercase font-bold tracking-wider">[ REQUISITION SPECIALIZATIONS ]</div>
+<h2 class="font-headline-lg text-headline-lg uppercase text-on-surface tracking-tight">PRIMARY AMBASSADOR SPECIALIZATIONS</h2>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">MULTI-DISCIPLINARY ACCREDITATION</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter">
+<!-- Spec 1: Face of Aakaar -->
+<div class="bg-surface-container-lowest border-2 border-on-surface pixel-box-shadow flex flex-col justify-between hover:-translate-x-0.5 hover:-translate-y-0.5 transition-all">
+<div class="h-7 bg-primary-container border-b-2 border-on-surface px-3 flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface font-bold">SPECIALIZATION 01</span>
+<span class="font-label-sm text-label-sm text-on-surface uppercase font-bold">+350 XP</span>
+</div>
+<div class="p-space-md flex-1">
+<div class="w-12 h-12 bg-surface-container border-2 border-on-surface flex items-center justify-center mb-3 pixel-box-shadow-sm">
+<span class="material-symbols-outlined text-[28px] text-on-surface">campaign</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm uppercase text-on-surface mb-2">FACE OF AAKAAR</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-4">
+            Act as the premier physical vanguard at your campus. Champion our workshops, announce hackathons, and anchor live student orientation huddles.
+          </p>
+<div class="space-y-1.5 pt-2 border-t border-surface-variant">
+<label class="flex items-center gap-2 cursor-pointer">
+<input checked="" class="w-4 h-4 accent-on-surface rounded-none cursor-pointer" type="checkbox">
+<span class="font-body-sm text-body-sm text-on-surface font-bold uppercase">Distribute Blueprint Posters</span>
+</label>
+<label class="flex items-center gap-2 cursor-pointer">
+<input class="w-4 h-4 accent-on-surface rounded-none cursor-pointer" type="checkbox">
+<span class="font-body-sm text-body-sm text-on-surface-variant uppercase">Host 15-min Classroom Huddle</span>
+</label>
+</div>
+</div>
+<div class="px-space-md pb-space-md pt-2">
+<div class="flex items-center justify-between text-on-surface font-label-sm text-label-sm bg-surface-container p-2 border border-on-surface">
+<span>OPERATIONAL STATUS</span>
+<span class="text-secondary font-bold">READY TO DEPLOY</span>
+</div>
+</div>
+</div>
+<!-- Spec 2: Communication Link -->
+<div class="bg-surface-container-lowest border-2 border-on-surface pixel-box-shadow flex flex-col justify-between hover:-translate-x-0.5 hover:-translate-y-0.5 transition-all">
+<div class="h-7 bg-secondary-fixed border-b-2 border-on-surface px-3 flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface font-bold">SPECIALIZATION 02</span>
+<span class="font-label-sm text-label-sm text-on-surface uppercase font-bold">+250 XP</span>
+</div>
+<div class="p-space-md flex-1">
+<div class="w-12 h-12 bg-surface-container border-2 border-on-surface flex items-center justify-center mb-3 pixel-box-shadow-sm">
+<span class="material-symbols-outlined text-[28px] text-on-surface">hub</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm uppercase text-on-surface mb-2">COMMUNICATION LINK</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-4">
+            Build and manage high-velocity WhatsApp/Telegram broadcast hubs. Transmit official guidelines, deadline alerts, and registration dossiers.
+          </p>
+<div class="space-y-1.5 pt-2 border-t border-surface-variant">
+<label class="flex items-center gap-2 cursor-pointer">
+<input checked="" class="w-4 h-4 accent-on-surface rounded-none cursor-pointer" type="checkbox">
+<span class="font-body-sm text-body-sm text-on-surface font-bold uppercase">Establish Civil WhatsApp Group</span>
+</label>
+<label class="flex items-center gap-2 cursor-pointer">
+<input checked="" class="w-4 h-4 accent-on-surface rounded-none cursor-pointer" type="checkbox">
+<span class="font-body-sm text-body-sm text-on-surface font-bold uppercase">Relay 3 Circular Dispatches</span>
+</label>
+</div>
+</div>
+<div class="px-space-md pb-space-md pt-2">
+<div class="flex items-center justify-between text-on-surface font-label-sm text-label-sm bg-surface-container p-2 border border-on-surface">
+<span>OPERATIONAL STATUS</span>
+<span class="text-tertiary font-bold">IN REVIEW</span>
+</div>
+</div>
+</div>
+<!-- Spec 3: Reporter & Strategist -->
+<div class="bg-surface-container-lowest border-2 border-on-surface pixel-box-shadow flex flex-col justify-between hover:-translate-x-0.5 hover:-translate-y-0.5 transition-all">
+<div class="h-7 bg-tertiary-container border-b-2 border-on-surface px-3 flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface font-bold">SPECIALIZATION 03</span>
+<span class="font-label-sm text-label-sm text-on-surface uppercase font-bold">+300 XP</span>
+</div>
+<div class="p-space-md flex-1">
+<div class="w-12 h-12 bg-surface-container border-2 border-on-surface flex items-center justify-center mb-3 pixel-box-shadow-sm">
+<span class="material-symbols-outlined text-[28px] text-on-surface">query_stats</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm uppercase text-on-surface mb-2">REPORTER &amp; STRATEGIST</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-4">
+            Monitor rival university engineering drives, collect student feedback telemetry, and file bi-weekly intelligence dispatches to the Core Council.
+          </p>
+<div class="space-y-1.5 pt-2 border-t border-surface-variant">
+<label class="flex items-center gap-2 cursor-pointer">
+<input class="w-4 h-4 accent-on-surface rounded-none cursor-pointer" type="checkbox">
+<span class="font-body-sm text-body-sm text-on-surface-variant uppercase">Submit Bi-Weekly Survey Form</span>
+</label>
+<label class="flex items-center gap-2 cursor-pointer">
+<input class="w-4 h-4 accent-on-surface rounded-none cursor-pointer" type="checkbox">
+<span class="font-body-sm text-body-sm text-on-surface-variant uppercase">Benchmark Competitor Fests</span>
+</label>
+</div>
+</div>
+<div class="px-space-md pb-space-md pt-2">
+<div class="flex items-center justify-between text-on-surface font-label-sm text-label-sm bg-surface-container p-2 border border-on-surface">
+<span>OPERATIONAL STATUS</span>
+<span class="text-on-surface font-bold">OPEN TARGET</span>
+</div>
+</div>
+</div>
+<!-- Spec 4: Event Leader -->
+<div class="bg-surface-container-lowest border-2 border-on-surface pixel-box-shadow flex flex-col justify-between hover:-translate-x-0.5 hover:-translate-y-0.5 transition-all">
+<div class="h-7 bg-primary-container border-b-2 border-on-surface px-3 flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface font-bold">SPECIALIZATION 04</span>
+<span class="font-label-sm text-label-sm text-on-surface uppercase font-bold">+500 XP</span>
+</div>
+<div class="p-space-md flex-1">
+<div class="w-12 h-12 bg-surface-container border-2 border-on-surface flex items-center justify-center mb-3 pixel-box-shadow-sm">
+<span class="material-symbols-outlined text-[28px] text-on-surface">construction</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm uppercase text-on-surface mb-2">EVENT LEADER</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-4">
+            Orchestrate on-ground prelim rounds for Bridge Design, CAD Architect, or Hydromodel Challenges right within your college laboratories.
+          </p>
+<div class="space-y-1.5 pt-2 border-t border-surface-variant">
+<label class="flex items-center gap-2 cursor-pointer">
+<input class="w-4 h-4 accent-on-surface rounded-none cursor-pointer" type="checkbox">
+<span class="font-body-sm text-body-sm text-on-surface-variant uppercase">Secure HOD Lab Endorsement</span>
+</label>
+<label class="flex items-center gap-2 cursor-pointer">
+<input class="w-4 h-4 accent-on-surface rounded-none cursor-pointer" type="checkbox">
+<span class="font-body-sm text-body-sm text-on-surface-variant uppercase">Execute Intra-College Prelims</span>
+</label>
+</div>
+</div>
+<div class="px-space-md pb-space-md pt-2">
+<div class="flex items-center justify-between text-on-surface font-label-sm text-label-sm bg-surface-container p-2 border border-on-surface">
+<span>OPERATIONAL STATUS</span>
+<span class="text-tertiary font-bold">HIGH BOUNTY</span>
+</div>
+</div>
+</div>
+<!-- Spec 5: Campus Pioneer -->
+<div class="bg-surface-container-lowest border-2 border-on-surface pixel-box-shadow flex flex-col justify-between hover:-translate-x-0.5 hover:-translate-y-0.5 transition-all">
+<div class="h-7 bg-secondary-fixed border-b-2 border-on-surface px-3 flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface font-bold">SPECIALIZATION 05</span>
+<span class="font-label-sm text-label-sm text-on-surface uppercase font-bold">+400 XP</span>
+</div>
+<div class="p-space-md flex-1">
+<div class="w-12 h-12 bg-surface-container border-2 border-on-surface flex items-center justify-center mb-3 pixel-box-shadow-sm">
+<span class="material-symbols-outlined text-[28px] text-on-surface">rocket_launch</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm uppercase text-on-surface mb-2">CAMPUS PIONEER</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-4">
+            Unlock new collegiate territories. Connect CEA IIT Bombay directly with your college's civil engineering clubs and department deans.
+          </p>
+<div class="space-y-1.5 pt-2 border-t border-surface-variant">
+<label class="flex items-center gap-2 cursor-pointer">
+<input class="w-4 h-4 accent-on-surface rounded-none cursor-pointer" type="checkbox">
+<span class="font-body-sm text-body-sm text-on-surface-variant uppercase">Formal MoU Initiation</span>
+</label>
+<label class="flex items-center gap-2 cursor-pointer">
+<input class="w-4 h-4 accent-on-surface rounded-none cursor-pointer" type="checkbox">
+<span class="font-body-sm text-body-sm text-on-surface-variant uppercase">Faculty Mentor Nomination</span>
+</label>
+</div>
+</div>
+<div class="px-space-md pb-space-md pt-2">
+<div class="flex items-center justify-between text-on-surface font-label-sm text-label-sm bg-surface-container p-2 border border-on-surface">
+<span>OPERATIONAL STATUS</span>
+<span class="text-secondary font-bold">READY TO DEPLOY</span>
+</div>
+</div>
+</div>
+<!-- Spec 6: Master Brainstormer -->
+<div class="bg-surface-container-lowest border-2 border-on-surface pixel-box-shadow flex flex-col justify-between hover:-translate-x-0.5 hover:-translate-y-0.5 transition-all">
+<div class="h-7 bg-tertiary-container border-b-2 border-on-surface px-3 flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface font-bold">SPECIALIZATION 06</span>
+<span class="font-label-sm text-label-sm text-on-surface uppercase font-bold">+350 XP</span>
+</div>
+<div class="p-space-md flex-1">
+<div class="w-12 h-12 bg-surface-container border-2 border-on-surface flex items-center justify-center mb-3 pixel-box-shadow-sm">
+<span class="material-symbols-outlined text-[28px] text-on-surface">lightbulb</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm uppercase text-on-surface mb-2">MASTER BRAINSTORMER</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-4">
+            Contribute high-impact problem statements for national structural design competitions, workshops, and sustainable infrastructure themes.
+          </p>
+<div class="space-y-1.5 pt-2 border-t border-surface-variant">
+<label class="flex items-center gap-2 cursor-pointer">
+<input class="w-4 h-4 accent-on-surface rounded-none cursor-pointer" type="checkbox">
+<span class="font-body-sm text-body-sm text-on-surface-variant uppercase">Submit 3 Problem Concepts</span>
+</label>
+<label class="flex items-center gap-2 cursor-pointer">
+<input class="w-4 h-4 accent-on-surface rounded-none cursor-pointer" type="checkbox">
+<span class="font-body-sm text-body-sm text-on-surface-variant uppercase">Review Tech Rubrics Dossier</span>
+</label>
+</div>
+</div>
+<div class="px-space-md pb-space-md pt-2">
+<div class="flex items-center justify-between text-on-surface font-label-sm text-label-sm bg-surface-container p-2 border border-on-surface">
+<span>OPERATIONAL STATUS</span>
+<span class="text-on-surface font-bold">ACTIVE LOG</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Cadet Progression HUD Meter -->
+<div class="mb-space-xl bg-surface-container p-space-lg border-2 border-on-surface pixel-box-shadow">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-3">
+<div>
+<div class="flex items-center gap-2 mb-1">
+<span class="font-label-sm text-label-sm text-tertiary uppercase font-bold tracking-widest">[ AMBASSADOR XP TELEMETRY ]</span>
+<span class="px-2 py-0.5 bg-surface-container-highest border border-on-surface font-label-sm text-label-sm uppercase font-bold">CADET ID: #CR-2688</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface uppercase">LEVEL 2: CHIEF REGIONAL AMBASSADOR</h3>
+</div>
+<div class="text-right">
+<div class="font-headline-sm text-headline-sm text-on-surface font-bold">1,850 / 2,500 XP</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant uppercase">650 XP TO TIER 3 (IIT BOMBAY PASS ELIGIBLE)</div>
+</div>
+</div>
+<!-- Retro Stepped 8-Bit XP Bar -->
+<div class="h-6 w-full bg-surface-variant border-2 border-on-surface p-0.5 flex">
+<div class="h-full bg-primary-container border-r-2 border-on-surface flex items-center justify-end px-2" style="width: 74%;">
+<span class="font-label-sm text-label-sm font-bold text-on-surface">74%</span>
+</div>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-2 mt-3 pt-3 border-t border-surface-variant font-label-sm text-label-sm uppercase text-on-surface-variant">
+<div>▪ TIER 1: VERIFIED CADET (ACHIEVED)</div>
+<div class="text-on-surface font-bold">▪ TIER 2: CHIEF REGIONAL (CURRENT)</div>
+<div>▪ TIER 3: FESTIVAL DELEGATE</div>
+<div>▪ TIER 4: IITB COUNCIL FELLOW</div>
+</div>
+</div>
+<!-- Live Bounty & Quest Board -->
+<div class="mb-space-xl">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-3 mb-space-md pb-2 border-b-2 border-on-surface">
+<div>
+<div class="font-label-sm text-label-sm text-tertiary uppercase font-bold tracking-wider">[ TERMINAL FEED : DISPATCHED TASKS ]</div>
+<h2 class="font-headline-lg text-headline-lg uppercase text-on-surface tracking-tight">LIVE BOUNTY &amp; QUEST BOARD</h2>
+</div>
+<div class="flex items-center gap-2">
+<span class="inline-block w-2 h-2 rounded-full bg-secondary-container"></span>
+<span class="font-label-sm text-label-sm uppercase text-on-surface font-bold">SYNC INTERVAL: 30S</span>
+</div>
+</div>
+<!-- High-Contrast Brutalist Table -->
+<div class="overflow-x-auto bg-surface-container-lowest border-2 border-on-surface pixel-box-shadow">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-surface-container-high border-b-2 border-on-surface text-on-surface font-label-md text-label-md uppercase">
+<th class="p-3">QUEST CODE</th>
+<th class="p-3">TACTICAL OBJECTIVE</th>
+<th class="p-3">TYPE</th>
+<th class="p-3">DEADLINE</th>
+<th class="p-3">REWARD</th>
+<th class="p-3 text-right">ACTION</th>
+</tr>
+</thead>
+<tbody class="font-body-md text-body-md divide-y-2 divide-on-surface">
+<!-- Bounty 1 -->
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="p-3 font-label-md text-label-md text-on-surface font-bold">BNT-01</td>
+<td class="p-3 font-bold text-on-surface">
+              Posters Deployment: Civil Block &amp; Library
+              <div class="font-body-sm text-body-sm text-on-surface-variant font-normal">Affix 5 official Aakaar posters across prominent campus notice hubs.</div>
+</td>
+<td class="p-3"><span class="bg-surface-container border border-on-surface px-2 py-0.5 font-label-sm text-label-sm uppercase">Ground Ops</span></td>
+<td class="p-3 font-label-sm text-label-sm text-tertiary font-bold">24H REMAINING</td>
+<td class="p-3 font-label-md text-label-md text-on-surface font-bold">+150 XP</td>
+<td class="p-3 text-right">
+<button class="px-3 py-1.5 bg-primary-container border-2 border-on-surface font-label-sm text-label-sm uppercase pixel-box-shadow-sm hover:translate-x-0.5 hover:translate-y-0.5 transition-all">CLAIM QUEST</button>
+</td>
+</tr>
+<!-- Bounty 2 -->
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="p-3 font-label-md text-label-md text-on-surface font-bold">BNT-02</td>
+<td class="p-3 font-bold text-on-surface">
+              Set Up College Information Desk
+              <div class="font-body-sm text-body-sm text-on-surface-variant font-normal">Host a physical helpdesk for 2 hours guiding juniors through event portals.</div>
+</td>
+<td class="p-3"><span class="bg-surface-container border border-on-surface px-2 py-0.5 font-label-sm text-label-sm uppercase">Field PR</span></td>
+<td class="p-3 font-label-sm text-label-sm text-on-surface-variant font-bold">3 DAYS</td>
+<td class="p-3 font-label-md text-label-md text-on-surface font-bold">+400 XP</td>
+<td class="p-3 text-right">
+<button class="px-3 py-1.5 bg-primary-container border-2 border-on-surface font-label-sm text-label-sm uppercase pixel-box-shadow-sm hover:translate-x-0.5 hover:translate-y-0.5 transition-all">CLAIM QUEST</button>
+</td>
+</tr>
+<!-- Bounty 3 -->
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="p-3 font-label-md text-label-md text-on-surface font-bold">BNT-03</td>
+<td class="p-3 font-bold text-on-surface">
+              Mobilize Bridge Design Squad (5+ Teams)
+              <div class="font-body-sm text-body-sm text-on-surface-variant font-normal">Recruit five verified teams for the National Popsicle Bridge Competition.</div>
+</td>
+<td class="p-3"><span class="bg-secondary-fixed border border-on-surface px-2 py-0.5 font-label-sm text-label-sm uppercase">Recruitment</span></td>
+<td class="p-3 font-label-sm text-label-sm text-tertiary font-bold">5 DAYS</td>
+<td class="p-3 font-label-md text-label-md text-on-surface font-bold">+600 XP</td>
+<td class="p-3 text-right">
+<button class="px-3 py-1.5 bg-surface-container-highest border-2 border-on-surface font-label-sm text-label-sm uppercase font-bold text-on-surface-variant">IN PROGRESS</button>
+</td>
+</tr>
+<!-- Bounty 4 -->
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="p-3 font-label-md text-label-md text-on-surface font-bold">BNT-04</td>
+<td class="p-3 font-bold text-on-surface">
+              Campus Reel &amp; Drone Video Submission
+              <div class="font-body-sm text-body-sm text-on-surface-variant font-normal">Record high-definition reel featuring your civil lab with Aakaar promo audio.</div>
+</td>
+<td class="p-3"><span class="bg-tertiary-container border border-on-surface px-2 py-0.5 font-label-sm text-label-sm uppercase">Media Craft</span></td>
+<td class="p-3 font-label-sm text-label-sm text-on-surface-variant font-bold">OCT 15</td>
+<td class="p-3 font-label-md text-label-md text-on-surface font-bold">+800 XP</td>
+<td class="p-3 text-right">
+<button class="px-3 py-1.5 bg-primary-container border-2 border-on-surface font-label-sm text-label-sm uppercase pixel-box-shadow-sm hover:translate-x-0.5 hover:translate-y-0.5 transition-all">DEPLOY</button>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<!-- Verification Workflow & Code of Conduct Grid -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter mb-space-xl">
+<!-- Verification Protocol (3 Steps) -->
+<div class="lg:col-span-7 bg-surface-container-lowest p-space-lg border-2 border-on-surface pixel-box-shadow flex flex-col justify-between">
+<div>
+<div class="flex items-center gap-2 mb-2">
+<span class="material-symbols-outlined text-[20px] text-on-surface">fact_check</span>
+<span class="font-label-sm text-label-sm uppercase font-bold text-on-surface tracking-wider">[ VERIFICATION PROTOCOL ]</span>
+</div>
+<h3 class="font-headline-md text-headline-md uppercase text-on-surface mb-4">HOW MISSIONS ARE VALIDATED</h3>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-3">
+<div class="bg-surface-container p-3 border-2 border-on-surface pixel-box-shadow-sm">
+<div class="w-7 h-7 bg-on-surface text-surface flex items-center justify-center font-label-sm text-label-sm font-bold mb-2">01</div>
+<div class="font-headline-sm text-headline-sm uppercase text-on-surface mb-1">PICK QUEST</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Lock active tasks from the Bounty Feed to avoid duplication.</div>
+</div>
+<div class="bg-surface-container p-3 border-2 border-on-surface pixel-box-shadow-sm">
+<div class="w-7 h-7 bg-on-surface text-surface flex items-center justify-center font-label-sm text-label-sm font-bold mb-2">02</div>
+<div class="font-headline-sm text-headline-sm uppercase text-on-surface mb-1">UPLOAD PROOF</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Submit geo-tagged photos, reel links, or drive registrations.</div>
+</div>
+<div class="bg-surface-container p-3 border-2 border-on-surface pixel-box-shadow-sm">
+<div class="w-7 h-7 bg-primary-container text-on-surface flex items-center justify-center font-label-sm text-label-sm font-bold mb-2">03</div>
+<div class="font-headline-sm text-headline-sm uppercase text-on-surface mb-1">XP CREDITED</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">CEA desk validates data packets within 24-48 hours.</div>
+</div>
+</div>
+</div>
+<div class="mt-4 pt-3 border-t-2 border-surface-variant flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase font-bold">CURRENT AUDIT LATENCY: &lt; 36 HOURS</span>
+<a class="font-label-sm text-label-sm uppercase font-bold text-tertiary underline" href="#">SUBMIT EVIDENCE DOSSIER →</a>
+</div>
+</div>
+<!-- Code of Conduct & Ethics Dossier -->
+<div class="lg:col-span-5 bg-surface-container p-space-lg border-2 border-on-surface pixel-box-shadow flex flex-col justify-between">
+<div>
+<div class="flex items-center gap-2 mb-2">
+<span class="material-symbols-outlined text-[20px] text-tertiary">gavel</span>
+<span class="font-label-sm text-label-sm uppercase font-bold text-tertiary tracking-wider">[ CR DIRECTIVE RULES ]</span>
+</div>
+<h3 class="font-headline-md text-headline-md uppercase text-on-surface mb-3">AMBASSADOR CODE</h3>
+<ul class="space-y-3 font-body-sm text-body-sm text-on-surface">
+<li class="flex items-start gap-2">
+<span class="material-symbols-outlined text-[16px] text-on-surface shrink-0 mt-0.5">check_circle</span>
+<div><strong class="uppercase font-bold">Academic Integrity:</strong> Zero tolerance for forged registration spreadsheets or duplicated proof photos.</div>
+</li>
+<li class="flex items-start gap-2">
+<span class="material-symbols-outlined text-[16px] text-on-surface shrink-0 mt-0.5">check_circle</span>
+<div><strong class="uppercase font-bold">Institutional Representation:</strong> Maintain respectful diplomacy when engaging college deans and external faculties.</div>
+</li>
+<li class="flex items-start gap-2">
+<span class="material-symbols-outlined text-[16px] text-on-surface shrink-0 mt-0.5">check_circle</span>
+<div><strong class="uppercase font-bold">Data Privacy:</strong> Student contacts harvested during drives must strictly remain confidential to CEA IIT Bombay.</div>
+</li>
+<li class="flex items-start gap-2">
+<span class="material-symbols-outlined text-[16px] text-on-surface shrink-0 mt-0.5">check_circle</span>
+<div><strong class="uppercase font-bold">Escalation Protocol:</strong> In case of scheduling conflicts, alert Regional Mentors 72h prior.</div>
+</li>
+</ul>
+</div>
+<div class="mt-4 p-2 bg-surface-container-lowest border border-on-surface text-center font-label-sm text-label-sm uppercase font-bold">
+        VIOLATIONS RESULT IN IMMEDIATE XP FORFEIT &amp; ACCREDITATION REVOCATION
+      </div>
+</div>
+</div>
+<!-- Bottom CTA: Final Deployment Bar -->
+<div class="bg-primary-container p-space-lg border-2 border-on-surface pixel-box-shadow flex flex-col md:flex-row items-center justify-between gap-6">
+<div>
+<div class="font-label-sm text-label-sm uppercase font-bold tracking-widest text-on-primary-fixed mb-1">[ CALL TO CONCRETE ACTION ]</div>
+<h2 class="font-headline-lg text-headline-lg uppercase tracking-tight text-on-surface">ACCEPT YOUR CR COMMISSIONS</h2>
+<p class="font-body-md text-body-md text-on-primary-fixed max-w-xl">
+        Deploy your regional campaign, claim high-yield bounties, and climb the leaderboard before Season 26 quota seals shut.
+      </p>
+</div>
+<div class="flex flex-wrap items-center gap-3 shrink-0">
+<button class="px-space-md py-3 bg-on-surface text-surface border-2 border-on-surface font-label-md text-label-md uppercase pixel-box-shadow hover:translate-x-0.5 hover:translate-y-0.5 hover:shadow-none transition-all font-bold">
+        CLAIM CR CREDENTIALS
+      </button>
+<button class="px-space-md py-3 bg-surface-container-lowest text-on-surface border-2 border-on-surface font-label-md text-label-md uppercase pixel-box-shadow hover:translate-x-0.5 hover:translate-y-0.5 hover:shadow-none transition-all font-bold">
+        VIEW LEADERBOARD
+      </button>
+</div>
+</div>
+</div></div></main><footer class="w-full bg-surface-container-low border-t-2 border-on-surface mt-auto"><div class="max-w-[1280px] mx-auto px-margin py-space-lg flex flex-col md:flex-row items-center justify-between gap-6"><div class="flex flex-col items-center md:items-start gap-1"><span class="font-label-md text-label-md text-on-surface uppercase tracking-wider">AAKAAR IIT BOMBAY | © 2026 Civil Engineering Association, IIT Bombay. [LIGHT PROTOCOL]</span><span class="font-body-sm text-body-sm text-on-surface-variant">Tactile Blueprint HUD &amp; Campus Ambassador Network</span></div><div class="flex items-center gap-2"><a class="w-9 h-9 border-2 border-on-surface bg-surface-container-lowest flex items-center justify-center pixel-box-shadow-sm hover:translate-x-0.5 hover:translate-y-0.5 hover:shadow-none transition-all" href="#"><span class="material-symbols-outlined text-on-surface text-[18px]">terminal</span></a><a class="w-9 h-9 border-2 border-on-surface bg-surface-container-lowest flex items-center justify-center pixel-box-shadow-sm hover:translate-x-0.5 hover:translate-y-0.5 hover:shadow-none transition-all" href="#"><span class="material-symbols-outlined text-on-surface text-[18px]">share</span></a><a class="w-9 h-9 border-2 border-on-surface bg-surface-container-lowest flex items-center justify-center pixel-box-shadow-sm hover:translate-x-0.5 hover:translate-y-0.5 hover:shadow-none transition-all" href="#"><span class="material-symbols-outlined text-on-surface text-[18px]">photo_camera</span></a><a class="w-9 h-9 border-2 border-on-surface bg-surface-container-lowest flex items-center justify-center pixel-box-shadow-sm hover:translate-x-0.5 hover:translate-y-0.5 hover:shadow-none transition-all" href="#"><span class="material-symbols-outlined text-on-surface text-[18px]">link</span></a></div><div class="font-label-sm text-label-sm text-on-surface-variant text-center md:text-right uppercase">Crafted for Civil Engineering Excellence &amp; Pixel Concrete 💛</div></div></footer><script src="assets/js/page-controls.js"></script><script src="assets/js/site-shell.js"></script></body></html>

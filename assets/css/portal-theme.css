@@ -1,0 +1,24 @@
+/* Shared visual controls for the Aakaar CR portal. */
+:root { color-scheme: dark; }
+body.light-mode { background-color: #faf8f5 !important; background-image: linear-gradient(to right, rgba(28,27,27,.06) 1px, transparent 1px), linear-gradient(to bottom, rgba(28,27,27,.06) 1px, transparent 1px) !important; color: #1c1b1b !important; }
+body.light-mode [class*="bg-[#0c0e14]"] { background-color: #faf8f5 !important; }
+body.light-mode [class*="bg-[#161822]"], body.light-mode [class*="bg-[#191b24]"] { background-color: #fff !important; }
+body.light-mode [class*="bg-[#1f2333]"] { background-color: #f0edec !important; }
+body.light-mode [class*="bg-[#050608]"], body.light-mode [class*="bg-black"] { background-color: #1c1b1b !important; }
+body.light-mode .text-white, body.light-mode .text-gray-300 { color: #1c1b1b !important; }
+body.light-mode .text-gray-400 { color: #5f5b55 !important; }
+body.light-mode [class*="border-[#2a2f45]"] { border-color: #1c1b1b !important; }
+body.light-mode header { background-color: rgba(252,249,248,.95) !important; }
+body.light-mode .scanline-overlay::after { opacity: .12; }
+body.light-mode .theme-toggle { background: #1c1b1b !important; color: #ffcc00 !important; border-color: #1c1b1b !important; }
+
+/* Standalone pages supplied as night-mode companions. */
+body.night-page { background: #0c0e14 !important; color: #e2e2eb !important; }
+body.night-page, body.night-page .bg-grid-pattern { background-image: linear-gradient(to right, rgba(36,255,205,.05) 1px, transparent 1px), linear-gradient(to bottom, rgba(255,208,38,.05) 1px, transparent 1px) !important; background-size: 24px 24px !important; }
+body.night-page header, body.night-page footer, body.night-page [class*="bg-surface"] { background-color: #161822 !important; }
+body.night-page [class*="bg-primary-container"] { background-color: #ffd026 !important; color: #08090d !important; }
+body.night-page [class*="bg-secondary"], body.night-page [class*="bg-tertiary"] { background-color: #1f2333 !important; }
+body.night-page [class*="text-on-surface"], body.night-page [class*="text-on-background"], body.night-page [class*="text-on-surface-variant"] { color: #e2e2eb !important; }
+body.night-page [class*="border-on-surface"] { border-color: #2a2f45 !important; }
+body.night-page .pixel-box-shadow { box-shadow: 4px 4px 0 #000 !important; }
+body.night-page .pixel-box-shadow-sm { box-shadow: 2px 2px 0 #000 !important; }

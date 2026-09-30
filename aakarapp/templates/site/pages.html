@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Aakaar CR Portal 2026</title>
+  <style>html,body,iframe{width:100%;height:100%;margin:0;border:0;background:#0c0e14}iframe{display:block;min-height:100vh}</style>
+</head>
+<body>
+  <iframe id="page" title="Aakaar CR Portal page"></iframe>
+  <script>
+    const route = new URLSearchParams(location.search).get('page') || 'about';
+    const files = {about:'about.html',roles:'roles.html',incentives:'incentives.html',leaderboard:'leaderboard.html',faq:'faq.html',team:'team.html'};
+    const paths = {home:'index.html',about:'pages.html?page=about','roles-quests':'pages.html?page=roles','incentives-loot':'pages.html?page=incentives','scores-leaderboard':'pages.html?page=leaderboard',faqs:'pages.html?page=faq','team-contact':'pages.html?page=team','login-portal':'index.html#portal-access'};
+    const frame = document.getElementById('page');
+    frame.src = files[route] || files.about;
+    frame.addEventListener('load', function () {
+      const doc = frame.contentDocument;
+      if (!doc) return;
+      doc.querySelectorAll('[data-path]').forEach(function (link) {
+        const destination = paths[link.dataset.path];
+        if (destination) { link.href = destination; link.target = '_top'; }
+      });
+      const dark = doc.createElement('style');
+      dark.textContent = `
+        body { background:#0c0e14 !important; color:#e2e2eb !important; background-image:linear-gradient(to right,rgba(36,255,205,.05) 1px,transparent 1px),linear-gradient(to bottom,rgba(255,208,38,.05) 1px,transparent 1px) !important;background-size:24px 24px !important; }
+        header,footer,[class*="bg-surface"] { background-color:#161822 !important; }
+        [class*="bg-primary-container"] { background-color:#ffd026 !important; color:#08090d !important; }
+        [class*="bg-secondary"],[class*="bg-tertiary"] { background-color:#1f2333 !important; }
+        [class*="text-on-surface"],[class*="text-on-background"],[class*="text-on-surface-variant"] { color:#e2e2eb !important; }
+        [class*="border-on-surface"] { border-color:#2a2f45 !important; }
+        .pixel-box-shadow { box-shadow:4px 4px #000 !important; }.pixel-box-shadow-sm { box-shadow:2px 2px #000 !important; }
+      `;
+      doc.head.appendChild(dark);
+      document.title = doc.title + ' | Night Mode';
+    });
+  </script>
+</body>
+</html>
