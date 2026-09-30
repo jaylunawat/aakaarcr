@@ -10,6 +10,9 @@
       button.setAttribute('aria-pressed', String(theme === 'night'));
     }
     localStorage.setItem('aakaar-theme', theme);
+    document.body.classList.toggle('light-mode', theme === 'day');
+    document.body.classList.toggle('night-mode', theme === 'night');
+    document.documentElement.classList.toggle('dark', theme === 'night');
   }
 
   document.addEventListener('DOMContentLoaded', function () {
@@ -21,12 +24,7 @@
       themeBtn.addEventListener('click', function () {
         const target = (localStorage.getItem('aakaar-theme') || saved) === 'night' ? 'day' : 'night';
         setTheme(target);
-        if (current === 'index.html' || current === 'day.html') location.href = target === 'day' ? 'day.html' : 'index.html';
-        else {
-          document.body.classList.toggle('night-mode', target === 'night');
-          document.body.classList.toggle('light-mode', target === 'day');
-          document.body.classList.toggle('dark', target === 'night');
-        }
+        setTheme(target);
       });
     }
   });

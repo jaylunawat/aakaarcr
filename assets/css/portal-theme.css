@@ -8,7 +8,9 @@ body.light-mode [class*="bg-[#050608]"], body.light-mode [class*="bg-black"] { b
 body.light-mode .text-white, body.light-mode .text-gray-300 { color: #1c1b1b !important; }
 body.light-mode .text-gray-400 { color: #5f5b55 !important; }
 body.light-mode [class*="border-[#2a2f45]"] { border-color: #1c1b1b !important; }
-body.light-mode header { background-color: rgba(252,249,248,.95) !important; }
+body.light-mode header { background-color:#161822 !important; color:#fff !important; }
+body.light-mode header .text-black, body.light-mode header [style*="color: #000"] { color:#fff !important; }
+body.light-mode header .bg-white { background-color:#fff !important; color:#000 !important; }
 body.light-mode .scanline-overlay::after { opacity: .12; }
 body.light-mode .theme-toggle { background: #1c1b1b !important; color: #ffcc00 !important; border-color: #1c1b1b !important; }
 
