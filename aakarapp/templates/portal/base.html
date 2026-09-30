@@ -2,7 +2,7 @@
 <html lang="en" class="dark">
 <head>
   <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{% block title %}Aakaar CR '26{% endblock %}</title>
+  <title>{% block title %}Aakaar CR '27{% endblock %}</title>
   <script src="https://cdn.tailwindcss.com?plugins=forms"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Silkscreen:wght@400;700&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
@@ -17,17 +17,21 @@
 <body class="min-h-screen">
   <header class="sticky top-0 z-30 bg-[#161822] border-b-4 border-black">
     <div class="max-w-7xl mx-auto px-4 min-h-20 flex flex-wrap items-center justify-between gap-3 py-3">
-      <a href="/" class="font-black text-2xl tracking-tighter text-white">AAKAAR <span class="ml-2 px-2 py-1 bg-[#FFD026] text-black text-xs">CR '26</span></a>
-      <nav class="flex flex-wrap gap-2 text-xs font-bold">
+      <a href="/" class="font-black text-2xl tracking-tighter text-white">AAKAAR <span class="ml-2 px-2 py-1 bg-[#FFD026] text-black text-xs">CR '27</span></a>
+      <nav class="hidden md:flex flex-wrap gap-2 text-xs font-bold">
+        <a class="pixel-button bg-white text-black px-3 py-2" href="/#about">ABOUT</a><a class="pixel-button bg-white text-black px-3 py-2" href="/#responsibilities">ROLES</a><a class="pixel-button bg-white text-black px-3 py-2" href="/#incentives">INCENTIVES</a>
         <a class="pixel-button bg-white text-black px-3 py-2" href="/tasks">TASKS</a>
         <a class="pixel-button bg-white text-black px-3 py-2" href="/leaderboard">SCORES</a>
         {% if request.user.is_authenticated %}<a class="pixel-button bg-[#FFD026] text-black px-3 py-2" href="/dashboard">DASHBOARD</a><a class="pixel-button bg-[#1f2333] px-3 py-2" href="/logout">LOGOUT</a>{% else %}<a class="pixel-button bg-[#FFD026] text-black px-3 py-2" href="/#portal-access">LOGIN / REGISTER</a>{% endif %}
       </nav>
+      <button class="md:hidden pixel-button bg-white text-black px-3 py-2 text-xs font-bold" id="portal-menu" type="button">MENU +</button>
     </div>
+    <nav class="hidden md:hidden grid grid-cols-2 gap-2 p-4 pt-0 text-xs font-bold" id="portal-mobile-nav"><a class="pixel-button bg-white text-black px-3 py-2" href="/#about">ABOUT</a><a class="pixel-button bg-white text-black px-3 py-2" href="/#responsibilities">ROLES</a><a class="pixel-button bg-white text-black px-3 py-2" href="/#incentives">INCENTIVES</a><a class="pixel-button bg-white text-black px-3 py-2" href="/tasks">TASKS</a><a class="pixel-button bg-white text-black px-3 py-2" href="/leaderboard">SCORES</a><a class="pixel-button bg-white text-black px-3 py-2" href="/#faq">FAQS</a><a class="pixel-button bg-white text-black px-3 py-2 col-span-2" href="/#contact">TEAM &amp; CONTACT</a></nav>
   </header>
   <main class="max-w-7xl mx-auto px-4 py-12">
     {% if messages %}{% for message in messages %}<div class="mb-6 border-2 {% if message.tags == 'error' %}border-red-400 text-red-200{% else %}border-[#00FF66] text-[#00FF66]{% endif %} bg-[#161822] p-4 text-sm">{{ message }}</div>{% endfor %}{% endif %}
     {% block content %}{% endblock %}
   </main>
-  <footer class="mt-16 py-8 border-t-2 border-[#2a2f45] text-center text-xs text-gray-400">AAKAAR IIT BOMBAY · CR PORTAL '26</footer>
+  <footer class="mt-16 py-8 border-t-4 border-[#2a2f45] bg-[#0c0e14] text-center text-xs text-gray-400">AAKAAR IIT BOMBAY · CR PORTAL '27</footer>
+  <script>document.getElementById('portal-menu')?.addEventListener('click',function(){const n=document.getElementById('portal-mobile-nav');n.classList.toggle('hidden');this.textContent=n.classList.contains('hidden')?'MENU +':'CLOSE ×';});</script>
 </body></html>

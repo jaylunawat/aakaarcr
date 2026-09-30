@@ -172,12 +172,13 @@ CR '27
 <!-- Navigation Tabs -->
 <nav aria-label="Main Navigation" class="hidden xl:flex items-stretch gap-2 h-12 lg:h-14">
 <a class="flex items-center justify-center px-4 bg-[#FFD026] border-2 border-black shadow-[4px_4px_0_#000] transition-all text-center leading-tight  font-bold" href="index.html">HOME</a>
-<a class="flex items-center justify-center px-4 bg-white border-2 border-black hover:bg-[#FFD026] hover:shadow-[4px_4px_0_#000] hover:-translate-y-0.5 transition-all text-center leading-tight  text-black font-bold" href="about.html">ABOUT</a>
-<a class="flex items-center justify-center px-3 bg-white border-2 border-black hover:bg-[#FFD026] hover:shadow-[4px_4px_0_#000] hover:-translate-y-0.5 transition-all text-center leading-tight  text-black font-bold" href="roles.html">ROLES<br>&amp;<br>QUESTS</a>
-<a class="flex items-center justify-center px-3 bg-white border-2 border-black hover:bg-[#FFD026] hover:shadow-[4px_4px_0_#000] hover:-translate-y-0.5 transition-all text-center leading-tight  text-black font-bold" href="incentives.html">INCENTIVES<br>&amp; LOOT</a>
+<a class="flex items-center justify-center px-4 bg-white border-2 border-black hover:bg-[#FFD026] hover:shadow-[4px_4px_0_#000] hover:-translate-y-0.5 transition-all text-center leading-tight text-black font-bold" href="/#about">ABOUT</a>
+<a class="flex items-center justify-center px-3 bg-white border-2 border-black hover:bg-[#FFD026] hover:shadow-[4px_4px_0_#000] hover:-translate-y-0.5 transition-all text-center leading-tight text-black font-bold" href="/#responsibilities">ROLES<br>&amp;<br>QUESTS</a>
+<a class="flex items-center justify-center px-3 bg-white border-2 border-black hover:bg-[#FFD026] hover:shadow-[4px_4px_0_#000] hover:-translate-y-0.5 transition-all text-center leading-tight text-black font-bold" href="/#incentives">INCENTIVES<br>&amp; LOOT</a>
 <a class="flex items-center justify-center px-4 bg-white border-2 border-black hover:bg-[#FFD026] hover:shadow-[4px_4px_0_#000] hover:-translate-y-0.5 transition-all text-center leading-tight text-[10px] sm:text-[11px] text-black font-bold" href="leaderboard.html">SCORES /<br>LEADERBOARD</a>
-<a class="flex items-center justify-center px-4 bg-white border-2 border-black hover:bg-[#FFD026] hover:shadow-[4px_4px_0_#000] hover:-translate-y-0.5 transition-all text-center leading-tight  text-black font-bold" href="faq.html">FAQS</a>
-<a class="flex items-center justify-center px-3 bg-white border-2 border-black hover:bg-[#FFD026] hover:shadow-[4px_4px_0_#000] hover:-translate-y-0.5 transition-all text-center leading-tight  text-black font-bold" href="team.html">TEAM &amp;<br>CONTACT</a>
+<a class="flex items-center justify-center px-3 bg-white border-2 border-black hover:bg-[#FFD026] hover:shadow-[4px_4px_0_#000] hover:-translate-y-0.5 transition-all text-center leading-tight text-black font-bold" href="/tasks">TASKS</a>
+<a class="flex items-center justify-center px-4 bg-white border-2 border-black hover:bg-[#FFD026] hover:shadow-[4px_4px_0_#000] hover:-translate-y-0.5 transition-all text-center leading-tight text-black font-bold" href="/#faq">FAQS</a>
+<a class="flex items-center justify-center px-3 bg-white border-2 border-black hover:bg-[#FFD026] hover:shadow-[4px_4px_0_#000] hover:-translate-y-0.5 transition-all text-center leading-tight text-black font-bold" href="/#contact">TEAM &amp;<br>CONTACT</a>
 </nav>
 
 <!-- Right Header Actions -->
@@ -192,6 +193,12 @@ CR '27
 <a class="flex items-center justify-center px-5 h-full bg-[#FFD026] border-2 border-black shadow-[4px_4px_0_#000] hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-[2px_2px_0_#000] transition-all text-[12px] sm:text-[13px]" data-auth-panel href="#portal-access">LOGIN / REGISTER</a>
 {% endif %}
 </div>
+</div>
+<div class="xl:hidden px-4 pb-3">
+  <button aria-controls="mobile-nav" aria-expanded="false" class="w-full border-2 border-black bg-white py-2 text-xs font-bold" id="mobile-menu-toggle" type="button">MENU +</button>
+  <nav class="hidden mt-2 grid grid-cols-2 gap-2" id="mobile-nav">
+    <a class="bg-[#FFD026] text-black border-2 border-black p-3" href="/">HOME</a><a class="bg-white text-black border-2 border-black p-3" href="/#about">ABOUT</a><a class="bg-white text-black border-2 border-black p-3" href="/#responsibilities">ROLES &amp; QUESTS</a><a class="bg-white text-black border-2 border-black p-3" href="/#incentives">INCENTIVES</a><a class="bg-white text-black border-2 border-black p-3" href="/tasks">TASKS</a><a class="bg-white text-black border-2 border-black p-3" href="/leaderboard">LEADERBOARD</a><a class="bg-white text-black border-2 border-black p-3" href="/#faq">FAQS</a><a class="bg-white text-black border-2 border-black p-3" href="/#contact">CONTACT</a>
+  </nav>
 </div>
 </header>
 <!-- END: MainHeader -->
@@ -359,7 +366,12 @@ CR '27
               </p>
 </div>
 <!-- Retro Skill Progress Section -->
-<div class="pt-6 border-t-2 border-[#2a2f45] space-y-5">
+<div class="grid grid-cols-1 gap-4 pt-6 border-t-2 border-[#2a2f45]">
+  <article class="flex items-center justify-between border-3 border-[#2a2f45] bg-[#161822] p-5 shadow-pixel"><div><strong class="block font-pixel text-2xl text-white">4.2K+</strong><span class="font-pixel text-xs text-gray-300">ACTIVE CRS</span></div><span class="text-2xl text-brand-neonCyan">♟</span></article>
+  <article class="flex items-center justify-between border-3 border-[#2a2f45] bg-[#161822] p-5 shadow-pixel"><div><strong class="block font-pixel text-2xl text-white">1.2K+</strong><span class="font-pixel text-xs text-gray-300">COLLEGES</span></div><span class="text-2xl text-brand-coral">◆</span></article>
+  <article class="flex items-center justify-between border-3 border-[#2a2f45] bg-[#161822] p-5 shadow-pixel"><div><strong class="block font-pixel text-2xl text-white">50+</strong><span class="font-pixel text-xs text-gray-300">EVENTS &amp; QUESTS</span></div><span class="text-2xl text-brand-yellow">♜</span></article>
+</div>
+<div class="hidden pt-6 border-t-2 border-[#2a2f45] space-y-5">
 <h4 class="font-pixel text-sm uppercase tracking-wide text-brand-yellow">
                 My Skills &amp; Level-Ups
               </h4>
@@ -522,7 +534,7 @@ CR '27
               [ EXCLUSIVE PERKS FOR REGISTERED &amp; PERFORMING COLLEGE REPS ]
             </p>
 </div>
-<a class="btn-pixel inline-flex items-center px-4 py-2.5 bg-[#191b24] text-brand-yellow border-2 border-brand-yellow shadow-pixel-sm font-bold text-xs uppercase hover:bg-brand-yellow hover:text-black transition-all" href="#portal-access">
+<a class="hidden btn-pixel inline-flex items-center px-4 py-2.5 bg-[#191b24] text-brand-yellow border-2 border-brand-yellow shadow-pixel-sm font-bold text-xs uppercase hover:bg-brand-yellow hover:text-black transition-all" href="#portal-access">
 <span>View All Rewards</span>
 <span class="ml-2 font-pixel text-[10px]">→</span>
 </a>
@@ -609,7 +621,7 @@ CR '27
 </section>
 <!-- END: IncentivesSection -->
 <!-- BEGIN: LeaderboardPreviewSection -->
-<section class="py-20 border-b-4 border-black border-b-[#2a2f45] bg-[#11131a]" id="leaderboard">
+<section class="hidden py-20 border-b-4 border-black border-b-[#2a2f45] bg-[#11131a]" id="leaderboard">
 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 <div class="text-center mb-12">
 <h2 class="font-pixel text-2xl sm:text-3xl text-white mb-3">
@@ -658,18 +670,15 @@ CR '27
 <h3 class="font-pixel text-xs uppercase text-brand-yellow mb-6 tracking-wider">
           Official Partners &amp; Collaborators
         </h3>
-<div class="flex flex-wrap justify-center items-center gap-6">
-<div class="w-48 bg-white border-2 border-black p-3 shadow-pixel">
-<div class="mb-2 font-pixel text-[10px] text-black">PLATFORM PARTNER</div>
-<img alt="Unstop" class="h-10 w-full object-contain" src="assets/images/Unstop-Logo-Transparent.png"/>
+<div class="grid grid-cols-1 md:grid-cols-3 border-2 border-[#2a2f45]">
+<div class="min-h-64 bg-[#0c0e14] border-b-2 md:border-b-0 md:border-r-2 border-[#2a2f45] p-6 flex flex-col justify-between text-left">
+<div class="font-pixel text-xs text-brand-neonCyan">01 / PLATFORM</div><div class="h-28 bg-white border border-[#2a2f45] p-5 flex items-center"><img alt="Unstop" class="w-full h-full object-contain" src="assets/images/Unstop-Logo-Transparent.png"/></div><p class="text-sm text-gray-300">Platform partner</p>
 </div>
-<div class="w-48 bg-white border-2 border-black p-3 shadow-pixel">
-<div class="mb-2 font-pixel text-[10px] text-black">OUTREACH PARTNER</div>
-<img alt="Student Tribe" class="h-10 w-full object-contain" src="assets/images/Student-Tribe-Transparent.png"/>
+<div class="min-h-64 bg-[#0c0e14] border-b-2 md:border-b-0 md:border-r-2 border-[#2a2f45] p-6 flex flex-col justify-between text-left">
+<div class="font-pixel text-xs text-brand-yellow">02 / OUTREACH</div><div class="h-28 bg-white border border-[#2a2f45] p-5 flex items-center"><img alt="Student Tribe" class="w-full h-full object-contain" src="assets/images/Student-Tribe-Transparent.png"/></div><p class="text-sm text-gray-300">Outreach partner</p>
 </div>
-<div class="w-48 bg-[#191b24] border-2 border-black border-[#2a2f45] p-3 shadow-pixel">
-<div class="mb-2 font-pixel text-[10px] text-gray-300">CR PARTNER</div>
-<img alt="StuCred" class="h-10 w-full object-contain" src="assets/images/stucred.png"/>
+<div class="min-h-64 bg-[#0c0e14] p-6 flex flex-col justify-between text-left">
+<div class="font-pixel text-xs text-brand-coral">03 / COMMUNITY</div><div class="h-28 bg-[#191b24] border border-[#2a2f45] p-5 flex items-center"><img alt="StuCred" class="w-full h-full object-contain" src="assets/images/stucred.png"/></div><p class="text-sm text-gray-300">CR partner</p>
 </div>
 </div>
 </div>
@@ -980,6 +989,14 @@ CR '27
       });
       document.addEventListener('keydown', (event) => {
         if (event.key === 'Escape' && !authPanel?.classList.contains('hidden')) closeAuthPanel();
+      });
+      const menuButton = document.getElementById('mobile-menu-toggle');
+      const mobileNav = document.getElementById('mobile-nav');
+      menuButton?.addEventListener('click', () => {
+        const isOpen = !mobileNav.classList.contains('hidden');
+        mobileNav.classList.toggle('hidden', isOpen);
+        menuButton.setAttribute('aria-expanded', String(!isOpen));
+        menuButton.textContent = isOpen ? 'MENU +' : 'CLOSE ×';
       });
     });
   </script>
